@@ -1,99 +1,87 @@
 /**
- * storage.js — LocalStorage persistence & server‑side Gist sync.
+ * storage.js — LocalStorage persistence & server-side Gist sync.
+ * Framework-agnostic: no DOM access, no global state mutation.
  */
-import { PROGRESS_KEY, UI_KEY, SYNC_ENDPOINT, state } from './data.js';
+import { PROGRESS_KEY, UI_KEY, SYNC_ENDPOINT } from './data.js';
 
 // ============================================================
 // LOCAL STORAGE — Collection
 // ============================================================
-export function saveLocal() {
-  localStorage.setItem(PROGRESS_KEY, JSON.stringify([...state.collected]));
+export function saveCollected(collected) {
+  localStorage.setItem(PROGRESS_KEY, JSON.stringify([...collected]));
 }
 
-export function loadLocal() {
+export function loadCollected() {
   try {
-    state.collected = new Set(JSON.parse(localStorage.getItem(PROGRESS_KEY) || '[]'));
-  } catch { /* ignore corrupt data */ }
+    return new Set(JSON.parse(localStorage.getItem(PROGRESS_KEY) || '[]'));
+  } catch { /* ignore corrupt data */ return new Set(); }
 }
 
 // ============================================================
 // LOCAL STORAGE — UI State
 // ============================================================
-export function saveUIState() {
-  const uiState = {
-    gen: state.activeGen,
-    view: state.viewMode,
-    shiny: document.body.classList.contains('shiny'),
-    search: state.searchQuery,
-  };
+export function saveUIState(uiState) {
   localStorage.setItem(UI_KEY, JSON.stringify(uiState));
 }
 
 export function loadUIState() {
   try {
     const raw = localStorage.getItem(UI_KEY);
-    if (!raw) return;
-    const s = JSON.parse(raw);
-    if (s.gen) state.activeGen = s.gen;
-    if (s.view) state.viewMode = s.view;
-    if (typeof s.shiny === 'boolean') document.body.classList.toggle('shiny', s.shiny);
-    if (typeof s.search === 'string') state.searchQuery = s.search;
-  } catch { /* ignore */ }
-}
-
-// ============================================================
-// SYNC STATUS HELPER
-// ============================================================
-export function setStatus(text, cls) {
-  const el = document.getElementById('sync-status');
-  el.textContent = text;
-  el.className = cls;
-  el.title = text;
+    return raw ? JSON.parse(raw) : null;
+  } catch { /* ignore */ return null; }
 }
 
 // ============================================================
 // REMOTE SYNC (Vercel → Gist)
 // ============================================================
-export async function loadFromRemote() {
+
+/**
+ * Load collection from remote Gist.
+ * @param {function} onStatus - Callback (text, cls) for sync status updates.
+ * @returns {Set|null} Remote collection set, or null on failure.
+ */
+export async function loadFromRemote(onStatus) {
   try {
-    setStatus('● 同步中…', 'syncing');
+    onStatus('● 同步中…', 'syncing');
     const r = await fetch(SYNC_ENDPOINT, { cache: 'no-store' });
     if (r.status === 404 || r.status === 405 || r.status === 501) {
-      setStatus('● 未配置同步', 'error');
-      return;
+      onStatus('● 未配置同步', 'error');
+      return null;
     }
-    if (!r.ok) throw new Error(r.status);
+    if (!r.ok) throw new Error(String(r.status));
     const remote = await r.json();
     if (Array.isArray(remote)) {
-      state.collected = new Set(remote);
-      saveLocal();
+      onStatus('● 已同步', 'ok');
+      return new Set(remote);
     }
-    setStatus('● 已同步', 'ok');
+    onStatus('● 已同步', 'ok');
+    return null;
   } catch {
-    setStatus('● 离线', 'error');
+    onStatus('● 离线', 'error');
+    return null;
   }
 }
 
-export async function saveToRemote() {
+/**
+ * Save collection to remote Gist.
+ * @param {Set} collected - Current collection set.
+ * @param {function} onStatus - Callback (text, cls) for sync status updates.
+ */
+export async function saveToRemote(collected, onStatus) {
   try {
-    setStatus('● 保存中…', 'syncing');
+    onStatus('● 保存中…', 'syncing');
     const r = await fetch(SYNC_ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify([...state.collected]),
+      body: JSON.stringify([...collected]),
     });
     if (r.status === 404 || r.status === 405 || r.status === 501) {
-      setStatus('● 未配置同步', 'error');
+      onStatus('● 未配置同步', 'error');
       return;
     }
-    if (!r.ok) throw new Error(r.status);
-    setStatus('● 已同步', 'ok');
+    if (!r.ok) throw new Error(String(r.status));
+    onStatus('● 已同步', 'ok');
   } catch {
-    setStatus('● 保存失败', 'error');
+    onStatus('● 保存失败', 'error');
   }
-}
-
-export function scheduleSyncRemote() {
-  clearTimeout(state.syncTimer);
-  state.syncTimer = setTimeout(saveToRemote, 2000);
 }

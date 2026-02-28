@@ -1,5 +1,6 @@
 /**
- * data.js — Constants, data loading, and filtering logic.
+ * data.js — Constants, data loading, and pure utility functions.
+ * No mutable state — all state lives in React.
  */
 
 // ============================================================
@@ -19,10 +20,9 @@ export const R2_BASE = 'https://pub-aa43740e9f1f450ca7cd054cdf60d907.r2.dev';
 /** Derive shiny sprite URL from normal sprite. Numeric IDs have shiny versions; variants don't. */
 export function getShinySprite(normalSprite) {
   if (!normalSprite || !normalSprite.startsWith(R2_BASE)) return normalSprite;
-  const suffix = normalSprite.slice(R2_BASE.length + 1); // e.g. "1.png" or "variant/a-rattata.png"
-  // Only numeric sprites (e.g. "123.png") have shiny versions
+  const suffix = normalSprite.slice(R2_BASE.length + 1);
   if (/^\d+\.png$/.test(suffix)) return `${R2_BASE}/shiny/${suffix}`;
-  return normalSprite; // variants — no shiny available
+  return normalSprite;
 }
 
 export const GEN_RANGES = {
@@ -43,6 +43,13 @@ export const REGION_BOXES = [
   { label: 'Paldea', range: [906, 1025] },
 ];
 
+export const DIST_GEN_LABELS = {
+  6: 'Gen 6 — XY / ORAS',
+  7: 'Gen 7 — SM / USUM',
+  8: 'Gen 8 — 剑盾 / BDSP / PLA',
+  9: 'Gen 9 — 朱紫',
+};
+
 export const BOX_SIZE = 30;
 
 export const SKIP_EVENT_IDS = new Set([
@@ -51,26 +58,23 @@ export const SKIP_EVENT_IDS = new Set([
   'pikachu-partner-cap', 'pikachu-world-cap',
 ]);
 
+export const STAT_LABELS = ['HP', '攻击', '防御', '特攻', '特防', '速度'];
+export const STAT_COLORS = ['#FF5555', '#F08030', '#F8D030', '#6890F0', '#78C850', '#F85888'];
+export const MAX_STAT = 255;
+
 // ============================================================
-// STATE
+// HELPERS
 // ============================================================
-export const state = {
-  pokemonData: [],
-  collected: new Set(),
-  activeGen: 'all',
-  viewMode: 'list',
-  searchQuery: '',
-  syncTimer: null,
-  lastFocus: null,
-  cardCache: new Map(),
-  /** @type {{ meta: Object, pokemon: Object, evoChains: Object, abilities: Object } | null} */
-  details: null,
-};
+/** Get the collection key (appends _shiny when in shiny mode). */
+export function getCollectionKey(id, isShiny) {
+  return isShiny ? id + '_shiny' : id;
+}
 
 // ============================================================
 // DATA LOADING
 // ============================================================
-export async function loadPokemonData() {
+/** Load Pokémon timeline + forms data. Returns the combined array. */
+export async function fetchPokemonData() {
   const [timelineRaw, formsRaw] = await Promise.all([
     fetch('data/main-timeline.json').then(r => r.json()),
     fetch('data/forms.json').then(r => r.json()),
@@ -96,25 +100,33 @@ export async function loadPokemonData() {
       _sprite: f.sprite, zh: f.zh, en: f.en, section: 'event',
     }));
 
-  state.pokemonData = [...mainList, ...gmaxList, ...eventList];
+  return [...mainList, ...gmaxList, ...eventList];
+}
 
-  // Load detailed Pokémon data (non-blocking — UI works without it)
-  fetch('data/pokemon-details.json')
-    .then(r => r.ok ? r.json() : null)
-    .then(d => { if (d) state.details = d; })
-    .catch(() => { /* details are optional — popover still works with basic info */ });
+/** Load detailed Pokémon data (types, stats, abilities, evo chains). */
+export async function fetchPokemonDetails() {
+  const r = await fetch('data/pokemon-details.json');
+  if (!r.ok) return null;
+  return r.json();
+}
+
+/** Load event distribution data. Returns Map<numInt, { numInt, zh, events[] }> or null. */
+export async function fetchEventDistributions() {
+  const r = await fetch('data/event-distributions.json');
+  if (!r.ok) return null;
+  const arr = await r.json();
+  const map = new Map();
+  for (const entry of arr) {
+    map.set(entry.numInt, entry);
+  }
+  return map;
 }
 
 // ============================================================
-// DETAIL LOOKUP
+// DETAIL LOOKUP (pure — takes details as param)
 // ============================================================
 
-/**
- * Extract PokeAPI ID from a Pokémon entry.
- * Base entries: numInt (1–1025). Forms with R2 numeric sprites: that number.
- * @param {Object} p - Pokémon entry from state.pokemonData
- * @returns {number}
- */
+/** Extract PokeAPI ID from a Pokémon entry. */
 export function getPokeApiId(p) {
   if (p._sprite) {
     const m = p._sprite.match(/r2\.dev\/(\d+)\.png$/);
@@ -125,22 +137,20 @@ export function getPokeApiId(p) {
 
 /**
  * Get detailed data for a Pokémon entry.
- * Falls back to base form data if form-specific data isn't available.
  * @param {Object} p - Pokémon entry
- * @returns {Object|null} Detail object with types, stats, abilities, etc.
+ * @param {Object|null} details - The details data object
+ * @returns {Object|null}
  */
-export function getDetail(p) {
-  if (!state.details) return null;
+export function getDetail(p, details) {
+  if (!details) return null;
   const pokeApiId = getPokeApiId(p);
-  const detail = state.details.pokemon[pokeApiId];
+  const detail = details.pokemon[pokeApiId];
   if (detail) {
-    // If this is a form entry, fill in missing fields from base
     if (detail.baseRef) {
-      const base = state.details.pokemon[detail.baseRef];
+      const base = details.pokemon[detail.baseRef];
       if (base) {
         return {
-          ...base,
-          ...detail,
+          ...base, ...detail,
           genus: detail.genus || base.genus,
           flavor: detail.flavor || base.flavor,
           eggGroups: detail.eggGroups || base.eggGroups,
@@ -154,53 +164,67 @@ export function getDetail(p) {
     }
     return detail;
   }
-  // Fall back to base form by numInt
   const numInt = p.numInt || parseInt(p.num) || 0;
-  return state.details.pokemon[numInt] || null;
+  return details.pokemon[numInt] || null;
 }
 
-/**
- * Get the evolution chain for a Pokémon.
- * @param {Object} detail - Detail object from getDetail()
- * @returns {Array|null}
- */
-export function getEvoChain(detail) {
-  if (!state.details || !detail?.evoChainId) return null;
-  return state.details.evoChains[detail.evoChainId] || null;
+/** Get evolution chain for a Pokémon detail object. */
+export function getEvoChain(detail, details) {
+  if (!details || !detail?.evoChainId) return null;
+  return details.evoChains[detail.evoChainId] || null;
 }
 
-/**
- * Get Chinese name for an ability.
- * @param {string} abilityName - English ability name
- * @returns {string} Chinese name or original English
- */
-export function getAbilityZh(abilityName) {
-  if (!state.details) return abilityName;
-  return state.details.abilities[abilityName] || abilityName;
+/** Get Chinese name for an ability. */
+export function getAbilityZh(abilityName, details) {
+  if (!details) return abilityName;
+  return details.abilities[abilityName] || abilityName;
 }
 
 // ============================================================
-// FILTERING
+// FILTERING (pure — takes params)
 // ============================================================
-export function getVisibleLists() {
-  const { activeGen, pokemonData } = state;
-  const isGenNumber = activeGen !== 'all' && activeGen !== 'gmax' && activeGen !== 'event';
+export function getVisibleLists(pokemonData, activeGen) {
+  const isGenNumber = activeGen !== 'all' && activeGen !== 'gmax'
+    && activeGen !== 'event' && activeGen !== 'distributions';
 
   let main = pokemonData.filter(p => p.section === 'main');
   if (isGenNumber) {
     const rng = GEN_RANGES[+activeGen];
     main = rng ? main.filter(p => p.numInt >= rng[0] && p.numInt <= rng[1]) : [];
-  } else if (activeGen === 'gmax' || activeGen === 'event') {
+  } else if (activeGen === 'gmax' || activeGen === 'event' || activeGen === 'distributions') {
     main = [];
   }
 
   const gmax = (activeGen === 'all' || activeGen === 'gmax')
-    ? pokemonData.filter(p => p.section === 'gmax')
-    : [];
+    ? pokemonData.filter(p => p.section === 'gmax') : [];
 
   const event = (activeGen === 'all' || activeGen === 'event')
-    ? pokemonData.filter(p => p.section === 'event')
-    : [];
+    ? pokemonData.filter(p => p.section === 'event') : [];
 
   return { main, gmax, event };
+}
+
+/** Check if a card passes the current filter + search criteria. */
+export function isCardVisible(p, { searchQuery, filterMode, filterType, collected, isShiny, details }) {
+  const key = getCollectionKey(p.id, isShiny);
+
+  // Collection filter
+  if (filterMode === 'collected' && !collected.has(key)) return false;
+  if (filterMode === 'uncollected' && collected.has(key)) return false;
+
+  // Type filter
+  if (filterType) {
+    const detail = getDetail(p, details);
+    if (!detail?.types?.includes(filterType)) return false;
+  }
+
+  // Search filter
+  if (searchQuery) {
+    const q = searchQuery.trim().toLowerCase();
+    if (q && !(p.zh || '').toLowerCase().includes(q) && !(p.en || '').toLowerCase().includes(q)) {
+      return false;
+    }
+  }
+
+  return true;
 }
