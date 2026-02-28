@@ -1,4 +1,4 @@
-const https = require('https');
+import https from 'https';
 
 /**
  * Make an HTTPS request to the GitHub API.
@@ -32,7 +32,7 @@ function githubRequest(method, path, token, body) {
   });
 }
 
-module.exports = async function handler(req, res) {
+export default async function handler(req, res) {
   const gistId = process.env.GIST_ID;
   const token = process.env.GIST_TOKEN;
 
