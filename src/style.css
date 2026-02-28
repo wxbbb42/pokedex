@@ -1,20 +1,40 @@
 /* ============================================================
-   VARIABLES
+   VARIABLES — Light Pokédex Theme
    ============================================================ */
 :root {
-  --bg: #1a1a2e;
-  --surface: #16213e;
-  --card: #0f3460;
-  --card-hover: #1a4a7a;
-  --collected: #1a4a2a;
-  --collected-border: #2ecc71;
-  --text: #e0e0e0;
-  --text-muted: #888;
-  --accent: #e94560;
-  --progress-bg: #0f3460;
-  --progress-fill: #2ecc71;
-  --btn: #0f3460;
-  --btn-active: #e94560;
+  --dex-red: #dc2626;
+  --dex-red-dark: #b91c1c;
+  --dex-red-light: #fef2f2;
+  --dex-blue: #2563eb;
+  --dex-blue-light: #dbeafe;
+  --dex-green: #16a34a;
+  --dex-green-light: #f0fdf4;
+  --dex-yellow: #eab308;
+
+  --bg: #f8f8f6;
+  --surface: #ffffff;
+  --surface-raised: #ffffff;
+  --card-bg: #ffffff;
+  --card-hover: #fafaf9;
+  --card-border: #e7e5e4;
+  --collected-bg: #f0fdf4;
+  --collected-border: #22c55e;
+
+  --text: #1c1917;
+  --text-secondary: #57534e;
+  --text-muted: #a8a29e;
+
+  --progress-bg: #e7e5e4;
+  --progress-fill: var(--dex-red);
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 2px 8px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04);
+  --shadow-lg: 0 8px 30px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.04);
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 99px;
 }
 
 /* ============================================================
@@ -31,101 +51,147 @@
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* ============================================================
-   TOP BAR
+   TOP BAR — Pokédex shell band
    ============================================================ */
 #topbar {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--surface);
-  padding: 10px 16px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  background: var(--dex-red);
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  box-shadow: 0 2px 12px rgba(220, 38, 38, 0.15), 0 1px 3px rgba(0,0,0,0.08);
 }
 
-/* Progress */
+/* Decorative hinge line — the diagonal ridge on a Pokédex */
+#topbar::after {
+  content: '';
+  display: block;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--dex-red-dark) 0%,
+    var(--dex-red-dark) 35%,
+    #991b1b 35.5%,
+    #991b1b 36.5%,
+    var(--dex-red-dark) 37%,
+    var(--dex-red-dark) 100%
+  );
+}
+
+/* ---- Lens + progress row ---- */
 #progress-label {
   font-size: 13px;
-  color: var(--text-muted);
-  margin-bottom: 4px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px 0;
+}
+
+/* Pokédex "lens" indicator before progress text */
+#progress-label::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #93c5fd, var(--dex-blue), #1d4ed8);
+  border: 2px solid rgba(255,255,255,0.4);
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.5), inset 0 1px 2px rgba(255,255,255,0.3);
+  flex-shrink: 0;
 }
 
 #progress-bar-bg {
-  background: var(--progress-bg);
-  border-radius: 99px;
-  height: 8px;
+  background: rgba(255,255,255,0.2);
+  border-radius: var(--radius-full);
+  height: 6px;
   overflow: hidden;
-  margin-bottom: 8px;
+  margin: 6px 16px 0;
 }
 
 #progress-bar {
-  background: var(--progress-fill);
+  background: #fbbf24;
   height: 100%;
-  border-radius: 99px;
+  border-radius: var(--radius-full);
   transition: width 0.4s ease;
   width: 0%;
+  box-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
 }
 
-/* Gen filters */
+/* ---- Controls panel (sits on the "bottom shell") ---- */
 #gen-filters {
   display: flex;
   flex-wrap: nowrap;
   gap: 6px;
   align-items: center;
   overflow-x: auto;
-  padding-bottom: 2px;
+  padding: 10px 16px 6px;
+  background: var(--surface);
+  scrollbar-width: thin;
 }
 
 #gen-filters::-webkit-scrollbar {
-  height: 6px;
+  height: 4px;
 }
 
 #gen-filters::-webkit-scrollbar-thumb {
-  background: #2a3a5a;
-  border-radius: 6px;
+  background: var(--card-border);
+  border-radius: 4px;
 }
 
 .gen-btn {
-  background: var(--btn);
-  color: var(--text);
-  border: none;
-  border-radius: 20px;
-  padding: 4px 12px;
+  background: var(--bg);
+  color: var(--text-secondary);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-full);
+  padding: 5px 14px;
   font-size: 12px;
+  font-weight: 500;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.15s ease;
   white-space: nowrap;
 }
 
-.gen-btn.active {
-  background: var(--btn-active);
+.gen-btn:hover {
+  background: var(--dex-red-light);
+  border-color: #fecaca;
+  color: var(--dex-red);
 }
 
-/* Sync status */
+.gen-btn.active {
+  background: var(--dex-red);
+  color: #fff;
+  border-color: var(--dex-red);
+}
+
+/* Sync status pill */
 #sync-status {
   margin-left: auto;
   font-size: 11px;
-  padding: 3px 8px;
-  border-radius: 99px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: var(--bg);
+  letter-spacing: 0.02em;
 }
 
-#sync-status.ok      { color: #2ecc71; }
-#sync-status.syncing { color: #f39c12; }
-#sync-status.error   { color: #e74c3c; }
+#sync-status.ok      { color: var(--dex-green); }
+#sync-status.syncing { color: #d97706; }
+#sync-status.error   { color: var(--dex-red); }
 
 /* Shiny toggle */
 .shiny-toggle {
   margin-left: 6px;
   font-size: 12px;
-  color: var(--text);
+  font-weight: 500;
+  color: var(--text-secondary);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -134,20 +200,20 @@ body {
 
 .shiny-toggle input {
   cursor: pointer;
-  accent-color: #f9ca24;
+  accent-color: var(--dex-yellow);
 }
 
 body.shiny .card {
-  border-color: rgba(249, 202, 36, 0.3);
+  border-color: rgba(234, 179, 8, 0.3);
 }
 
 body.shiny .card.collected {
-  background: #2a2a0a;
-  border-color: #f9ca24;
+  background: #fefce8;
+  border-color: var(--dex-yellow);
 }
 
 body.shiny .card.collected::after {
-  color: #f9ca24;
+  color: #ca8a04;
 }
 
 /* ============================================================
@@ -155,19 +221,20 @@ body.shiny .card.collected::after {
    ============================================================ */
 #search-bar {
   width: 100%;
-  margin-top: 8px;
-  background: var(--card);
-  border: 1px solid #333;
-  border-radius: 20px;
+  margin-top: 0;
+  background: var(--bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-full);
   color: var(--text);
   font-size: 13px;
-  padding: 5px 14px;
+  padding: 6px 14px;
   outline: none;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 #search-bar:focus {
-  border-color: var(--accent);
+  border-color: var(--dex-red);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.08);
 }
 
 #search-bar::placeholder {
@@ -181,22 +248,32 @@ body.shiny .card.collected::after {
   display: flex;
   gap: 6px;
   align-items: center;
-  margin-top: 8px;
+  padding: 6px 16px 10px;
+  background: var(--surface);
 }
 
 .view-btn {
-  background: var(--btn);
-  color: var(--text);
-  border: none;
-  border-radius: 8px;
-  padding: 4px 10px;
+  background: var(--bg);
+  color: var(--text-secondary);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  padding: 4px 12px;
   font-size: 12px;
+  font-weight: 500;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.15s ease;
+}
+
+.view-btn:hover {
+  background: var(--dex-blue-light);
+  border-color: #93c5fd;
+  color: var(--dex-blue);
 }
 
 .view-btn.active {
-  background: #6c5ce7;
+  background: var(--dex-blue);
+  color: #fff;
+  border-color: var(--dex-blue);
 }
 
 @media (max-width: 720px) {
@@ -214,14 +291,21 @@ body.shiny .card.collected::after {
    ============================================================ */
 #main {
   padding: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .section-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 20px 0 12px;
-  padding-left: 10px;
-  border-left: 4px solid var(--accent);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 24px 0 12px;
+  padding: 8px 14px;
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--dex-red);
+  color: var(--text);
+  box-shadow: var(--shadow-sm);
+  letter-spacing: -0.01em;
 }
 
 /* ============================================================
@@ -234,7 +318,7 @@ body.shiny .card.collected::after {
 }
 
 @media (min-width: 480px)  { .grid { grid-template-columns: repeat(5, 1fr); } }
-@media (min-width: 640px)  { .grid { grid-template-columns: repeat(6, 1fr); } }
+@media (min-width: 640px)  { .grid { grid-template-columns: repeat(6, 1fr); gap: 10px; } }
 @media (min-width: 900px)  { .grid { grid-template-columns: repeat(8, 1fr); } }
 @media (min-width: 1200px) { .grid { grid-template-columns: repeat(10, 1fr); } }
 
@@ -253,14 +337,16 @@ body.shiny .card.collected::after {
 }
 
 .box-label {
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   background: var(--surface);
-  border-radius: 8px 8px 0 0;
-  padding: 5px 10px;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  padding: 6px 12px;
   color: var(--text-muted);
-  border: 1px solid #2a3a5a;
+  border: 1px solid var(--card-border);
   border-bottom: none;
   display: none;
 }
@@ -270,15 +356,15 @@ body.shiny .card.collected::after {
   grid-template-columns: repeat(6, 64px);
   grid-template-rows: repeat(5, 64px);
   gap: 3px;
-  background: #0a1628;
+  background: #f1f0ee;
   padding: 6px;
-  border: 1px solid #2a3a5a;
-  border-radius: 0 8px 8px 8px;
+  border: 1px solid var(--card-border);
+  border-radius: 0 var(--radius-md) var(--radius-md) var(--radius-md);
 }
 
 .box-grid .card {
   padding: 2px;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
 }
 
 .box-grid .card img {
@@ -299,36 +385,37 @@ body.shiny .card.collected::after {
 }
 
 .box-grid .card.empty {
-  background: #0d1f3c;
-  border: 1px dashed #1a2a4a;
+  background: #f5f5f4;
+  border: 1px dashed #d6d3d1;
   cursor: default;
   pointer-events: none;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 /* ============================================================
-   CARD
+   CARD — Clean device-panel feel
    ============================================================ */
 .card {
-  background: var(--card);
-  border-radius: 10px;
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
   padding: 8px 4px 6px;
   text-align: center;
   cursor: pointer;
-  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
   position: relative;
-  border: 2px solid transparent;
+  border: 1.5px solid var(--card-border);
   user-select: none;
+  box-shadow: var(--shadow-sm);
 }
 
 .card:hover {
-  background: var(--card-hover);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--shadow-md);
+  border-color: #d6d3d1;
 }
 
 .card.collected {
-  background: var(--collected);
+  background: var(--collected-bg);
   border-color: var(--collected-border);
 }
 
@@ -346,6 +433,7 @@ body.shiny .card.collected::after {
   width: 60px;
   height: 60px;
   image-rendering: pixelated;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.06));
 }
 
 @media (min-width: 640px) {
@@ -357,7 +445,9 @@ body.shiny .card.collected::after {
 
 .card .num {
   font-size: 10px;
+  font-weight: 600;
   color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
 }
 
 .card .name-zh {
@@ -365,6 +455,7 @@ body.shiny .card.collected::after {
   font-weight: 600;
   margin-top: 2px;
   line-height: 1.2;
+  color: var(--text);
 }
 
 .card .name-en {
@@ -378,26 +469,44 @@ body.shiny .card.collected::after {
 }
 
 .card.search-match {
-  outline: 2px solid #4dd0e1;
+  outline: 2px solid var(--dex-blue);
+  outline-offset: 1px;
 }
 
 /* ============================================================
-   LOADING
+   LOADING — Poké Ball spinner
    ============================================================ */
 #loading {
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
   color: var(--text-muted);
+  font-size: 14px;
 }
 
 .spinner {
   width: 40px;
   height: 40px;
-  border: 4px solid var(--card);
-  border-top-color: var(--accent);
+  border: 4px solid var(--card-border);
+  border-top-color: var(--dex-red);
+  border-right-color: var(--dex-red);
   border-radius: 50%;
-  animation: spin 0.8s linear infinite;
+  animation: spin 0.7s linear infinite;
   margin: 0 auto 16px;
+  position: relative;
+}
+
+/* Center dot — Poké Ball button */
+.spinner::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: var(--dex-red);
+  border-radius: 50%;
+  border: 2px solid var(--card-border);
 }
 
 @keyframes spin {
@@ -414,8 +523,8 @@ body.shiny .card.collected::after {
   position: fixed;
   inset: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(4px);
+  background: rgba(28, 25, 23, 0.4);
+  backdrop-filter: blur(6px);
   align-items: center;
   justify-content: center;
 }
@@ -426,23 +535,23 @@ body.shiny .card.collected::after {
 
 #popover {
   background: var(--surface);
-  border: 1px solid #2a3a5a;
-  border-radius: 16px;
-  padding: 24px;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px 24px;
   max-width: 320px;
   width: 90%;
   position: relative;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  box-shadow: var(--shadow-lg), 0 0 0 1px rgba(0,0,0,0.03);
   animation: popIn 0.18s ease;
 }
 
 @keyframes popIn {
   from {
-    transform: scale(0.85);
+    transform: scale(0.9) translateY(8px);
     opacity: 0;
   }
   to {
-    transform: scale(1);
+    transform: scale(1) translateY(0);
     opacity: 1;
   }
 }
@@ -454,12 +563,20 @@ body.shiny .card.collected::after {
   background: none;
   border: none;
   color: var(--text-muted);
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
   line-height: 1;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
 }
 
 #popover-close:hover {
+  background: var(--bg);
   color: var(--text);
 }
 
@@ -469,26 +586,30 @@ body.shiny .card.collected::after {
   width: 96px;
   height: 96px;
   image-rendering: pixelated;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.08));
 }
 
 #popover-num {
   font-size: 12px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
   color: var(--text-muted);
   text-align: center;
 }
 
 #popover-zh {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   margin: 4px 0 2px;
+  color: var(--text);
 }
 
 #popover-en {
   font-size: 13px;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 #popover-section-badge {
@@ -499,31 +620,32 @@ body.shiny .card.collected::after {
 
 #popover-section-badge span {
   font-size: 11px;
-  color: var(--accent);
-  background: rgba(233, 69, 96, 0.15);
-  border-radius: 99px;
-  padding: 2px 12px;
+  font-weight: 600;
+  color: var(--dex-red);
+  background: var(--dex-red-light);
+  border-radius: var(--radius-full);
+  padding: 3px 14px;
 }
 
 .popover-collect-btn {
   width: 100%;
   padding: 11px;
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   border: 2px solid var(--collected-border);
   background: transparent;
-  color: var(--collected-border);
+  color: var(--dex-green);
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.15s ease;
 }
 
 .popover-collect-btn.owned {
-  background: var(--collected);
-  color: #fff;
+  background: var(--collected-bg);
+  color: var(--dex-green);
   border-color: var(--collected-border);
 }
 
 .popover-collect-btn:hover {
-  opacity: 0.85;
+  background: var(--dex-green-light);
 }

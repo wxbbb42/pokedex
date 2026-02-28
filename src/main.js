@@ -103,6 +103,6 @@ initPopoverListeners();
 // ============================================================
 init().catch(e => {
   document.getElementById('loading').innerHTML =
-    `<div style="color:#e74c3c;padding:20px">加载失败：${esc(e.message)}` +
-    `<br><pre style="font-size:11px;margin-top:8px;white-space:pre-wrap">${esc(e.stack)}</pre></div>`;
+    `<div style="color:#dc2626;padding:20px">加载失败：${esc(e.message)}` +
+    `<br><pre style="font-size:11px;margin-top:8px;white-space:pre-wrap;color:#57534e">${esc(e.stack)}</pre></div>`;
 });
