@@ -35,6 +35,9 @@ sprites/
 # Wrangler local state
 .wrangler/
 
+# Data pipeline cache (checkpoints, intermediate data)
+.cache/
+
 # Claude Code CLI (ECC plugin)
 .github/agents/
 .github/commands/

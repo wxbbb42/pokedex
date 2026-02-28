@@ -2,8 +2,9 @@
  * ui.js — Card creation, rendering, popover, search, progress.
  */
 import {
-  FALLBACK, GEN_RANGES, REGION_BOXES, BOX_SIZE,
+  FALLBACK, GEN_RANGES, REGION_BOXES, BOX_SIZE, R2_BASE,
   state, getVisibleLists, getShinySprite,
+  getDetail, getEvoChain, getAbilityZh,
 } from './data.js';
 import { saveLocal, saveUIState, scheduleSyncRemote } from './storage.js';
 
@@ -209,9 +210,17 @@ export function applySearch() {
 }
 
 // ============================================================
+// STAT BAR CONSTANTS
+// ============================================================
+const STAT_LABELS = ['HP', '攻击', '防御', '特攻', '特防', '速度'];
+const STAT_COLORS = ['#FF5555', '#F08030', '#F8D030', '#6890F0', '#78C850', '#F85888'];
+const MAX_STAT = 255; // Max possible single stat
+
+// ============================================================
 // POPOVER
 // ============================================================
 let popoverCurrentId = null;
+let popoverCurrentEntry = null;
 
 export function esc(str) {
   return String(str || '')
@@ -220,17 +229,169 @@ export function esc(str) {
     .replace(/'/g, '&#39;');
 }
 
+/**
+ * Build type badge HTML for given type names.
+ */
+function renderTypeBadges(types) {
+  if (!state.details || !types?.length) return '';
+  const meta = state.details.meta.types;
+  return types.map(t => {
+    const info = meta[t] || { zh: t, color: '#999' };
+    return `<span class="type-badge" style="background:${esc(info.color)}">${esc(info.zh)}</span>`;
+  }).join('');
+}
+
+/**
+ * Build stat bars HTML.
+ */
+function renderStatBars(stats) {
+  if (!stats?.length) return '';
+  const total = stats.reduce((sum, v) => sum + v, 0);
+  const bars = stats.map((val, i) => {
+    const pct = Math.min(val / MAX_STAT * 100, 100);
+    return `<div class="stat-row">
+      <span class="stat-label">${STAT_LABELS[i]}</span>
+      <span class="stat-value">${val}</span>
+      <div class="stat-bar-bg">
+        <div class="stat-bar-fill" style="width:${pct}%;background:${STAT_COLORS[i]}"></div>
+      </div>
+    </div>`;
+  }).join('');
+  return bars;
+}
+
+/**
+ * Build ability tags HTML.
+ */
+function renderAbilities(detail) {
+  if (!detail) return '';
+  const tags = [];
+  for (const a of (detail.abilities || [])) {
+    tags.push(`<span class="ability-tag">${esc(getAbilityZh(a))}</span>`);
+  }
+  if (detail.hiddenAbility) {
+    tags.push(`<span class="ability-tag hidden-ability">${esc(getAbilityZh(detail.hiddenAbility))}<small>隐藏</small></span>`);
+  }
+  return tags.join('');
+}
+
+/**
+ * Build evolution chain HTML with mini sprites.
+ */
+function renderEvoChain(chain) {
+  if (!chain?.length || chain.length <= 1) return '';
+  return chain.map((stage, i) => {
+    const sprite = stage.id ? `${R2_BASE}/${stage.id}.png` : '';
+    const trigger = stage.trigger
+      ? `<span class="evo-trigger">${esc(stage.trigger)}</span>`
+      : '';
+    const arrow = i > 0 ? '<span class="evo-arrow">→</span>' : '';
+    return `${arrow}<div class="evo-stage">
+      ${sprite ? `<img src="${esc(sprite)}" alt="" loading="lazy" onerror="this.style.display='none'">` : ''}
+      <span class="evo-name">${esc(stage.zh || '')}</span>
+      ${trigger}
+    </div>`;
+  }).join('');
+}
+
 function openPopover(p, key) {
   popoverCurrentId = key;
+  popoverCurrentEntry = p;
   const isShiny = document.body.classList.contains('shiny');
   const sprite = isShiny ? (getShinySprite(p._sprite) || FALLBACK) : (p._sprite || FALLBACK);
+
+  // Basic info (always available)
   document.getElementById('popover-sprite').src = sprite;
   document.getElementById('popover-num').textContent =
     '#' + String(p.numInt || parseInt(p.num) || 0).padStart(4, '0');
   document.getElementById('popover-zh').textContent = p.zh || '';
   document.getElementById('popover-en').textContent = p.en || '';
+
   const sectionMap = { main: '全国图鉴', gmax: '⚡ 超极巨化', event: '🌟 配信特殊' };
   document.getElementById('popover-section').textContent = sectionMap[p.section] || p.section;
+
+  // Rich detail info
+  const detail = getDetail(p);
+  const hasDetail = !!detail;
+
+  // Types
+  const typesEl = document.getElementById('popover-types');
+  typesEl.innerHTML = hasDetail ? renderTypeBadges(detail.types) : '';
+
+  // Genus
+  const genusEl = document.getElementById('popover-genus');
+  genusEl.textContent = hasDetail && detail.genus ? detail.genus : '';
+  genusEl.style.display = hasDetail && detail.genus ? '' : 'none';
+
+  // Legendary/Mythical badge
+  const sectionBadge = document.getElementById('popover-section-badge');
+  if (hasDetail && (detail.isLegendary || detail.isMythical)) {
+    const label = detail.isMythical ? '幻之宝可梦' : '传说宝可梦';
+    sectionBadge.querySelector('span').textContent = label;
+    sectionBadge.classList.add('legendary');
+  } else {
+    sectionBadge.querySelector('span').textContent = sectionMap[p.section] || p.section;
+    sectionBadge.classList.remove('legendary');
+  }
+
+  // Physical info
+  const physSection = document.getElementById('popover-physical');
+  if (hasDetail) {
+    document.getElementById('popover-height').textContent =
+      detail.height != null ? (detail.height / 10).toFixed(1) + ' m' : '—';
+    document.getElementById('popover-weight').textContent =
+      detail.weight != null ? (detail.weight / 10).toFixed(1) + ' kg' : '—';
+    document.getElementById('popover-capture').textContent =
+      detail.captureRate != null ? String(detail.captureRate) : '—';
+    physSection.style.display = '';
+  } else {
+    physSection.style.display = 'none';
+  }
+
+  // Abilities
+  const abilitiesSection = document.getElementById('popover-abilities-section');
+  const abilitiesEl = document.getElementById('popover-abilities');
+  if (hasDetail && (detail.abilities?.length || detail.hiddenAbility)) {
+    abilitiesEl.innerHTML = renderAbilities(detail);
+    abilitiesSection.style.display = '';
+  } else {
+    abilitiesSection.style.display = 'none';
+  }
+
+  // Stats
+  const statsSection = document.getElementById('popover-stats-section');
+  const statsEl = document.getElementById('popover-stats');
+  const totalEl = document.getElementById('popover-stats-total');
+  if (hasDetail && detail.stats?.length) {
+    statsEl.innerHTML = renderStatBars(detail.stats);
+    const total = detail.stats.reduce((s, v) => s + v, 0);
+    totalEl.textContent = `合计: ${total}`;
+    statsSection.style.display = '';
+  } else {
+    statsSection.style.display = 'none';
+  }
+
+  // Evolution chain
+  const evoSection = document.getElementById('popover-evo-section');
+  const evoEl = document.getElementById('popover-evo-chain');
+  const chain = hasDetail ? getEvoChain(detail) : null;
+  if (chain?.length > 1) {
+    evoEl.innerHTML = renderEvoChain(chain);
+    evoSection.style.display = '';
+  } else {
+    evoSection.style.display = 'none';
+  }
+
+  // Flavor text
+  const flavorSection = document.getElementById('popover-flavor-section');
+  const flavorEl = document.getElementById('popover-flavor');
+  if (hasDetail && detail.flavor) {
+    flavorEl.textContent = detail.flavor;
+    flavorSection.style.display = '';
+  } else {
+    flavorSection.style.display = 'none';
+  }
+
   refreshPopoverBtn();
 
   const overlay = document.getElementById('popover-overlay');
@@ -256,6 +417,7 @@ export function closePopover() {
   if (state.lastFocus && typeof state.lastFocus.focus === 'function') state.lastFocus.focus();
   state.lastFocus = null;
   popoverCurrentId = null;
+  popoverCurrentEntry = null;
 }
 
 export function initPopoverListeners() {

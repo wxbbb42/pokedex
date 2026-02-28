@@ -11,11 +11,65 @@
 <div id="popover-overlay" aria-hidden="true">
   <div id="popover" role="dialog" aria-modal="true" aria-labelledby="popover-zh" aria-describedby="popover-en">
     <button id="popover-close" aria-label="关闭">✕</button>
-    <img id="popover-sprite" src="" alt="">
-    <div id="popover-num"></div>
-    <div id="popover-zh"></div>
-    <div id="popover-en"></div>
-    <div id="popover-section-badge"><span id="popover-section"></span></div>
+
+    <!-- Header: Sprite + Name + Type -->
+    <div id="popover-header">
+      <img id="popover-sprite" src="" alt="">
+      <div id="popover-header-info">
+        <div id="popover-num"></div>
+        <div id="popover-zh"></div>
+        <div id="popover-en"></div>
+        <div id="popover-types"></div>
+      </div>
+    </div>
+
+    <!-- Genus + Section badge -->
+    <div id="popover-genus-row">
+      <span id="popover-genus"></span>
+      <span id="popover-section-badge"><span id="popover-section"></span></span>
+    </div>
+
+    <!-- Physical Info -->
+    <div id="popover-physical">
+      <div class="physical-item">
+        <span class="physical-label">身高</span>
+        <span class="physical-value" id="popover-height">—</span>
+      </div>
+      <div class="physical-item">
+        <span class="physical-label">体重</span>
+        <span class="physical-value" id="popover-weight">—</span>
+      </div>
+      <div class="physical-item">
+        <span class="physical-label">捕获率</span>
+        <span class="physical-value" id="popover-capture">—</span>
+      </div>
+    </div>
+
+    <!-- Abilities -->
+    <div id="popover-abilities-section">
+      <div class="detail-label">特性</div>
+      <div id="popover-abilities"></div>
+    </div>
+
+    <!-- Stats -->
+    <div id="popover-stats-section">
+      <div class="detail-label">种族值</div>
+      <div id="popover-stats"></div>
+      <div id="popover-stats-total"></div>
+    </div>
+
+    <!-- Evolution Chain -->
+    <div id="popover-evo-section">
+      <div class="detail-label">进化链</div>
+      <div id="popover-evo-chain"></div>
+    </div>
+
+    <!-- Flavor Text -->
+    <div id="popover-flavor-section">
+      <p id="popover-flavor"></p>
+    </div>
+
+    <!-- Collect Button -->
     <button class="popover-collect-btn" id="popover-collect-btn">＋ 标记已收集</button>
   </div>
 </div>

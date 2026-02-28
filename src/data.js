@@ -63,6 +63,8 @@ export const state = {
   syncTimer: null,
   lastFocus: null,
   cardCache: new Map(),
+  /** @type {{ meta: Object, pokemon: Object, evoChains: Object, abilities: Object } | null} */
+  details: null,
 };
 
 // ============================================================
@@ -95,6 +97,86 @@ export async function loadPokemonData() {
     }));
 
   state.pokemonData = [...mainList, ...gmaxList, ...eventList];
+
+  // Load detailed Pokémon data (non-blocking — UI works without it)
+  fetch('data/pokemon-details.json')
+    .then(r => r.ok ? r.json() : null)
+    .then(d => { if (d) state.details = d; })
+    .catch(() => { /* details are optional — popover still works with basic info */ });
+}
+
+// ============================================================
+// DETAIL LOOKUP
+// ============================================================
+
+/**
+ * Extract PokeAPI ID from a Pokémon entry.
+ * Base entries: numInt (1–1025). Forms with R2 numeric sprites: that number.
+ * @param {Object} p - Pokémon entry from state.pokemonData
+ * @returns {number}
+ */
+export function getPokeApiId(p) {
+  if (p._sprite) {
+    const m = p._sprite.match(/r2\.dev\/(\d+)\.png$/);
+    if (m) return parseInt(m[1]);
+  }
+  return p.numInt || parseInt(p.num) || 0;
+}
+
+/**
+ * Get detailed data for a Pokémon entry.
+ * Falls back to base form data if form-specific data isn't available.
+ * @param {Object} p - Pokémon entry
+ * @returns {Object|null} Detail object with types, stats, abilities, etc.
+ */
+export function getDetail(p) {
+  if (!state.details) return null;
+  const pokeApiId = getPokeApiId(p);
+  const detail = state.details.pokemon[pokeApiId];
+  if (detail) {
+    // If this is a form entry, fill in missing fields from base
+    if (detail.baseRef) {
+      const base = state.details.pokemon[detail.baseRef];
+      if (base) {
+        return {
+          ...base,
+          ...detail,
+          genus: detail.genus || base.genus,
+          flavor: detail.flavor || base.flavor,
+          eggGroups: detail.eggGroups || base.eggGroups,
+          captureRate: detail.captureRate ?? base.captureRate,
+          genderRate: detail.genderRate ?? base.genderRate,
+          isLegendary: detail.isLegendary ?? base.isLegendary,
+          isMythical: detail.isMythical ?? base.isMythical,
+          evoChainId: detail.evoChainId ?? base.evoChainId,
+        };
+      }
+    }
+    return detail;
+  }
+  // Fall back to base form by numInt
+  const numInt = p.numInt || parseInt(p.num) || 0;
+  return state.details.pokemon[numInt] || null;
+}
+
+/**
+ * Get the evolution chain for a Pokémon.
+ * @param {Object} detail - Detail object from getDetail()
+ * @returns {Array|null}
+ */
+export function getEvoChain(detail) {
+  if (!state.details || !detail?.evoChainId) return null;
+  return state.details.evoChains[detail.evoChainId] || null;
+}
+
+/**
+ * Get Chinese name for an ability.
+ * @param {string} abilityName - English ability name
+ * @returns {string} Chinese name or original English
+ */
+export function getAbilityZh(abilityName) {
+  if (!state.details) return abilityName;
+  return state.details.abilities[abilityName] || abilityName;
 }
 
 // ============================================================
