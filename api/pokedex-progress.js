@@ -1,3 +1,37 @@
+const https = require('https');
+
+/**
+ * Make an HTTPS request to the GitHub API.
+ * Uses the built-in https module for maximum Node.js compatibility.
+ */
+function githubRequest(method, path, token, body) {
+  return new Promise((resolve, reject) => {
+    const options = {
+      hostname: 'api.github.com',
+      path,
+      method,
+      headers: {
+        'Authorization': `token ${token}`,
+        'User-Agent': 'LivingPokedex/1.0',
+        'Content-Type': 'application/json',
+        'Accept': 'application/vnd.github.v3+json',
+      },
+    };
+
+    const req = https.request(options, (res) => {
+      let data = '';
+      res.on('data', (chunk) => { data += chunk; });
+      res.on('end', () => {
+        resolve({ status: res.statusCode, body: data });
+      });
+    });
+
+    req.on('error', reject);
+    if (body) req.write(body);
+    req.end();
+  });
+}
+
 module.exports = async function handler(req, res) {
   const gistId = process.env.GIST_ID;
   const token = process.env.GIST_TOKEN;
@@ -15,20 +49,14 @@ module.exports = async function handler(req, res) {
     return;
   }
 
-  const headers = {
-    'Authorization': `token ${token}`,
-    'User-Agent': 'LivingPokedex/1.0',
-    'Content-Type': 'application/json'
-  };
-
   try {
     if (req.method === 'GET') {
-      const r = await fetch(`https://api.github.com/gists/${gistId}`, { headers });
-      if (!r.ok) {
+      const r = await githubRequest('GET', `/gists/${gistId}`, token);
+      if (r.status !== 200) {
         res.status(r.status).json({ error: 'gist_fetch_failed' });
         return;
       }
-      const data = await r.json();
+      const data = JSON.parse(r.body);
       const file = data.files && data.files['pokedex-progress.json'];
       if (file && file.content) {
         const parsed = JSON.parse(file.content);
@@ -49,17 +77,14 @@ module.exports = async function handler(req, res) {
         return;
       }
 
-      const r = await fetch(`https://api.github.com/gists/${gistId}`, {
-        method: 'PATCH',
-        headers,
-        body: JSON.stringify({
-          files: {
-            'pokedex-progress.json': { content: JSON.stringify(body) }
-          }
-        })
+      const payload = JSON.stringify({
+        files: {
+          'pokedex-progress.json': { content: JSON.stringify(body) }
+        }
       });
 
-      if (!r.ok) {
+      const r = await githubRequest('PATCH', `/gists/${gistId}`, token, payload);
+      if (r.status !== 200) {
         res.status(r.status).json({ error: 'gist_save_failed' });
         return;
       }
