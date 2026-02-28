@@ -29,6 +29,12 @@ __pycache__/
 # Backups
 *.bak
 
+# Local sprite cache (285MB+ — served from Cloudflare R2)
+sprites/
+
+# Wrangler local state
+.wrangler/
+
 # Claude Code CLI (ECC plugin)
 .github/agents/
 .github/commands/

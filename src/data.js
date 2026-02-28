@@ -14,6 +14,17 @@ export const FALLBACK =
   '<rect width="60" height="60" rx="8" fill="%23333"/>' +
   '<text x="50%25" y="55%25" dominant-baseline="middle" text-anchor="middle" font-size="24" fill="%23666">?</text></svg>';
 
+export const R2_BASE = 'https://pub-aa43740e9f1f450ca7cd054cdf60d907.r2.dev';
+
+/** Derive shiny sprite URL from normal sprite. Numeric IDs have shiny versions; variants don't. */
+export function getShinySprite(normalSprite) {
+  if (!normalSprite || !normalSprite.startsWith(R2_BASE)) return normalSprite;
+  const suffix = normalSprite.slice(R2_BASE.length + 1); // e.g. "1.png" or "variant/a-rattata.png"
+  // Only numeric sprites (e.g. "123.png") have shiny versions
+  if (/^\d+\.png$/.test(suffix)) return `${R2_BASE}/shiny/${suffix}`;
+  return normalSprite; // variants — no shiny available
+}
+
 export const GEN_RANGES = {
   1: [1, 151],   2: [152, 251],  3: [252, 386],
   4: [387, 493],  5: [494, 649],  6: [650, 721],

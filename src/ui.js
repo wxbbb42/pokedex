@@ -3,7 +3,7 @@
  */
 import {
   FALLBACK, GEN_RANGES, REGION_BOXES, BOX_SIZE,
-  state, getVisibleLists,
+  state, getVisibleLists, getShinySprite,
 } from './data.js';
 import { saveLocal, saveUIState, scheduleSyncRemote } from './storage.js';
 
@@ -81,6 +81,10 @@ export function syncCardState(card, p, isShiny) {
   const key = isShiny ? p.id + '_shiny' : p.id;
   card.dataset.id = key;
   card.classList.toggle('collected', state.collected.has(key));
+  const img = card.querySelector('img');
+  if (img) {
+    img.src = isShiny ? (getShinySprite(p._sprite) || FALLBACK) : (p._sprite || FALLBACK);
+  }
 }
 
 function getCard(p) {
@@ -218,7 +222,8 @@ export function esc(str) {
 
 function openPopover(p, key) {
   popoverCurrentId = key;
-  const sprite = p._sprite || FALLBACK;
+  const isShiny = document.body.classList.contains('shiny');
+  const sprite = isShiny ? (getShinySprite(p._sprite) || FALLBACK) : (p._sprite || FALLBACK);
   document.getElementById('popover-sprite').src = sprite;
   document.getElementById('popover-num').textContent =
     '#' + String(p.numInt || parseInt(p.num) || 0).padStart(4, '0');
