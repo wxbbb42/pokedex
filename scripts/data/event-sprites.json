@@ -1,0 +1,191 @@
+[
+  {
+    "id": "pikachu-original-cap",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 XY小智帽",
+    "en": "Pikachu Ash's XY Cap",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10094.png",
+    "section": "event"
+  },
+  {
+    "id": "pikachu-hoenn-cap",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 ORAS小智帽",
+    "en": "Pikachu Ash's ORAS Cap",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10095.png",
+    "section": "event"
+  },
+  {
+    "id": "pikachu-sinnoh-cap",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 DP小智帽",
+    "en": "Pikachu Ash's DP Cap",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10096.png",
+    "section": "event"
+  },
+  {
+    "id": "pikachu-unova-cap",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 BW小智帽",
+    "en": "Pikachu Ash's BW Cap",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10097.png",
+    "section": "event"
+  },
+  {
+    "id": "pikachu-kalos-cap",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 XY小智帽2",
+    "en": "Pikachu Ash's Kalos Cap",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10098.png",
+    "section": "event"
+  },
+  {
+    "id": "pikachu-alola-cap",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 SM小智帽",
+    "en": "Pikachu Ash's Alola Cap",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10099.png",
+    "section": "event"
+  },
+  {
+    "id": "pikachu-partner-cap",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 搭档帽",
+    "en": "Pikachu Partner Cap",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10148.png",
+    "section": "event"
+  },
+  {
+    "id": "pikachu-world-cap",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 世界帽",
+    "en": "Pikachu World Cap",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10160.png",
+    "section": "event"
+  },
+  {
+    "id": "magearna-original",
+    "num": "0801",
+    "numInt": 801,
+    "zh": "马盖娜 原色",
+    "en": "Magearna Original Color",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10147.png",
+    "section": "event"
+  },
+  {
+    "id": "zarude-dada",
+    "num": "0893",
+    "numInt": 893,
+    "zh": "扎鲁德 爸爸",
+    "en": "Zarude Dada",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10192.png",
+    "section": "event"
+  },
+  {
+    "id": "calyrex-ice",
+    "num": "0898",
+    "numInt": 898,
+    "zh": "蕾冠王 白马骑士",
+    "en": "Calyrex Ice Rider",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10193.png",
+    "section": "event"
+  },
+  {
+    "id": "calyrex-shadow",
+    "num": "0898",
+    "numInt": 898,
+    "zh": "蕾冠王 黑马骑士",
+    "en": "Calyrex Shadow Rider",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10194.png",
+    "section": "event"
+  },
+  {
+    "id": "hoopa-unbound",
+    "num": "0720",
+    "numInt": 720,
+    "zh": "胡帕 魔圈解放",
+    "en": "Hoopa Unbound",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10086.png",
+    "section": "event"
+  },
+  {
+    "id": "shaymin-sky",
+    "num": "0492",
+    "numInt": 492,
+    "zh": "谢米 天空形",
+    "en": "Shaymin Sky Forme",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10006.png",
+    "section": "event"
+  },
+  {
+    "id": "keldeo-resolute",
+    "num": "0647",
+    "numInt": 647,
+    "zh": "克雷色利亚 觉悟形",
+    "en": "Keldeo Resolute Forme",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10024.png",
+    "section": "event"
+  },
+  {
+    "id": "meloetta-pirouette",
+    "num": "0648",
+    "numInt": 648,
+    "zh": "梅洛耶塔 歌舞形",
+    "en": "Meloetta Pirouette Forme",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10018.png",
+    "section": "event"
+  },
+  {
+    "id": "necrozma-dawn",
+    "num": "0800",
+    "numInt": 800,
+    "zh": "奈克洛兹玛 日食",
+    "en": "Necrozma Dawn Wings",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10156.png",
+    "section": "event"
+  },
+  {
+    "id": "necrozma-dusk",
+    "num": "0800",
+    "numInt": 800,
+    "zh": "奈克洛兹玛 月食",
+    "en": "Necrozma Dusk Mane",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10155.png",
+    "section": "event"
+  },
+  {
+    "id": "zygarde-complete",
+    "num": "0718",
+    "numInt": 718,
+    "zh": "基格尔德 完全形",
+    "en": "Zygarde Complete Forme",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10120.png",
+    "section": "event"
+  },
+  {
+    "id": "urshifu-rapid-strike",
+    "num": "0892",
+    "numInt": 892,
+    "zh": "武道熊师 连击流",
+    "en": "Urshifu Rapid Strike Style",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10191.png",
+    "section": "event"
+  },
+  {
+    "id": "greninja-ash",
+    "num": "0658",
+    "numInt": 658,
+    "zh": "甲贺忍蛙 小智",
+    "en": "Ash-Greninja",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10117.png",
+    "section": "event"
+  }
+]

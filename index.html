@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Living Pokédex</title>
+</head>
+<body>
+
+<!-- Popover -->
+<div id="popover-overlay" aria-hidden="true">
+  <div id="popover" role="dialog" aria-modal="true" aria-labelledby="popover-zh" aria-describedby="popover-en">
+    <button id="popover-close" aria-label="关闭">✕</button>
+    <img id="popover-sprite" src="" alt="">
+    <div id="popover-num"></div>
+    <div id="popover-zh"></div>
+    <div id="popover-en"></div>
+    <div id="popover-section-badge"><span id="popover-section"></span></div>
+    <button class="popover-collect-btn" id="popover-collect-btn">＋ 标记已收集</button>
+  </div>
+</div>
+
+<!-- Top Bar -->
+<div id="topbar">
+  <div id="progress-label">
+    <span id="progress-text" role="status" aria-live="polite">已收集 0 / 0</span>
+  </div>
+  <div id="progress-bar-bg"><div id="progress-bar"></div></div>
+  <div id="gen-filters">
+    <button class="gen-btn active" data-gen="all">全部</button>
+    <button class="gen-btn" data-gen="1">Gen1</button>
+    <button class="gen-btn" data-gen="2">Gen2</button>
+    <button class="gen-btn" data-gen="3">Gen3</button>
+    <button class="gen-btn" data-gen="4">Gen4</button>
+    <button class="gen-btn" data-gen="5">Gen5</button>
+    <button class="gen-btn" data-gen="6">Gen6</button>
+    <button class="gen-btn" data-gen="7">Gen7</button>
+    <button class="gen-btn" data-gen="8">Gen8</button>
+    <button class="gen-btn" data-gen="9">Gen9</button>
+    <button class="gen-btn" data-gen="gmax">⚡ Gmax</button>
+    <button class="gen-btn" data-gen="event">🌟 配信</button>
+    <label class="shiny-toggle"><input type="checkbox" id="shiny-mode"> ✨ 闪光</label>
+    <span id="sync-status" class="ok">● 已同步</span>
+  </div>
+  <div id="view-toggle">
+    <span style="font-size:12px;color:var(--text-muted)">视图：</span>
+    <button class="view-btn active" id="btn-view-list">📋 列表</button>
+    <button class="view-btn" id="btn-view-box">📦 Box</button>
+    <input id="search-bar" type="text" placeholder="搜索宝可梦（中/英文）…" style="width:200px;margin-left:8px">
+  </div>
+</div>
+
+<!-- Main Content -->
+<div id="main">
+  <div id="loading">
+    <div class="spinner"></div>
+    正在加载图鉴数据...
+  </div>
+  <div id="content" style="display:none">
+    <div id="list-view">
+      <div class="section-title">📖 全国图鉴 + 变体</div>
+      <div class="grid" id="grid-main"></div>
+      <div class="section-title" id="section-gmax" style="display:none">⚡ 超极巨化（Gigantamax）</div>
+      <div class="grid" id="grid-gmax" style="display:none"></div>
+      <div class="section-title" id="section-event" style="display:none">🌟 配信 &amp; 神话宝可梦</div>
+      <div class="grid" id="grid-event" style="display:none"></div>
+    </div>
+    <div id="box-view" style="display:none">
+      <div id="boxes-container"></div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

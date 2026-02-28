@@ -1,0 +1,3341 @@
+[
+  {
+    "id": "a-rattata",
+    "num": "0019",
+    "numInt": 19,
+    "zh": "阿罗拉 小拉达",
+    "en": "Alolan Rattata",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10091.png",
+    "section": "form"
+  },
+  {
+    "id": "a-raticate",
+    "num": "0020",
+    "numInt": 20,
+    "zh": "阿罗拉 拉达",
+    "en": "Alolan Raticate",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10092.png",
+    "section": "form"
+  },
+  {
+    "id": "pikachu-f",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 ♀",
+    "en": "Pikachu ♀",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/female/25.png",
+    "section": "gender"
+  },
+  {
+    "id": "a-raichu",
+    "num": "0026",
+    "numInt": 26,
+    "zh": "阿罗拉 雷丘",
+    "en": "Alolan Raichu",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10100.png",
+    "section": "form"
+  },
+  {
+    "id": "a-sandshrew",
+    "num": "0027",
+    "numInt": 27,
+    "zh": "阿罗拉 穿山鼠",
+    "en": "Alolan Sandshrew",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10101.png",
+    "section": "form"
+  },
+  {
+    "id": "a-sandslash",
+    "num": "0028",
+    "numInt": 28,
+    "zh": "阿罗拉 穿山王",
+    "en": "Alolan Sandslash",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10102.png",
+    "section": "form"
+  },
+  {
+    "id": "a-vulpix",
+    "num": "0037",
+    "numInt": 37,
+    "zh": "阿罗拉 六尾",
+    "en": "Alolan Vulpix",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10103.png",
+    "section": "form"
+  },
+  {
+    "id": "a-ninetales",
+    "num": "0038",
+    "numInt": 38,
+    "zh": "阿罗拉 九尾",
+    "en": "Alolan Ninetales",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10104.png",
+    "section": "form"
+  },
+  {
+    "id": "a-diglett",
+    "num": "0050",
+    "numInt": 50,
+    "zh": "阿罗拉 地鼠",
+    "en": "Alolan Diglett",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10105.png",
+    "section": "form"
+  },
+  {
+    "id": "a-dugtrio",
+    "num": "0051",
+    "numInt": 51,
+    "zh": "阿罗拉 三地鼠",
+    "en": "Alolan Dugtrio",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10106.png",
+    "section": "form"
+  },
+  {
+    "id": "a-meowth",
+    "num": "0052",
+    "numInt": 52,
+    "zh": "阿罗拉 喵喵",
+    "en": "Alolan Meowth",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10107.png",
+    "section": "form"
+  },
+  {
+    "id": "g-meowth",
+    "num": "0052",
+    "numInt": 52,
+    "zh": "伽勒尔 喵喵",
+    "en": "Galarian Meowth",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10161.png",
+    "section": "form"
+  },
+  {
+    "id": "a-persian",
+    "num": "0053",
+    "numInt": 53,
+    "zh": "阿罗拉 猫老大",
+    "en": "Alolan Persian",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10108.png",
+    "section": "form"
+  },
+  {
+    "id": "h-growlithe",
+    "num": "0058",
+    "numInt": 58,
+    "zh": "洗翠 卡蒂狗",
+    "en": "Hisuian Growlithe",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10229.png",
+    "section": "form"
+  },
+  {
+    "id": "h-arcanine",
+    "num": "0059",
+    "numInt": 59,
+    "zh": "洗翠 风速狗",
+    "en": "Hisuian Arcanine",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10230.png",
+    "section": "form"
+  },
+  {
+    "id": "a-geodude",
+    "num": "0074",
+    "numInt": 74,
+    "zh": "阿罗拉 小拳石",
+    "en": "Alolan Geodude",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10109.png",
+    "section": "form"
+  },
+  {
+    "id": "a-graveler",
+    "num": "0075",
+    "numInt": 75,
+    "zh": "阿罗拉 隆隆石",
+    "en": "Alolan Graveler",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10110.png",
+    "section": "form"
+  },
+  {
+    "id": "a-golem",
+    "num": "0076",
+    "numInt": 76,
+    "zh": "阿罗拉 隆隆岩",
+    "en": "Alolan Golem",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10111.png",
+    "section": "form"
+  },
+  {
+    "id": "g-ponyta",
+    "num": "0077",
+    "numInt": 77,
+    "zh": "伽勒尔 小火马",
+    "en": "Galarian Ponyta",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10162.png",
+    "section": "form"
+  },
+  {
+    "id": "g-rapidash",
+    "num": "0078",
+    "numInt": 78,
+    "zh": "伽勒尔 烈焰马",
+    "en": "Galarian Rapidash",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10163.png",
+    "section": "form"
+  },
+  {
+    "id": "g-slowpoke",
+    "num": "0079",
+    "numInt": 79,
+    "zh": "伽勒尔 呆呆兽",
+    "en": "Galarian Slowpoke",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10164.png",
+    "section": "form"
+  },
+  {
+    "id": "g-slowbro",
+    "num": "0080",
+    "numInt": 80,
+    "zh": "伽勒尔 呆壳兽",
+    "en": "Galarian Slowbro",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10165.png",
+    "section": "form"
+  },
+  {
+    "id": "g-farfetchd",
+    "num": "0083",
+    "numInt": 83,
+    "zh": "伽勒尔 大葱鸭",
+    "en": "Galarian Farfetch'd",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10166.png",
+    "section": "form"
+  },
+  {
+    "id": "a-grimer",
+    "num": "0088",
+    "numInt": 88,
+    "zh": "阿罗拉 臭泥",
+    "en": "Alolan Grimer",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10112.png",
+    "section": "form"
+  },
+  {
+    "id": "a-muk",
+    "num": "0089",
+    "numInt": 89,
+    "zh": "阿罗拉 臭臭泥",
+    "en": "Alolan Muk",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10113.png",
+    "section": "form"
+  },
+  {
+    "id": "h-voltorb",
+    "num": "0100",
+    "numInt": 100,
+    "zh": "洗翠 霹雳电球",
+    "en": "Hisuian Voltorb",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10231.png",
+    "section": "form"
+  },
+  {
+    "id": "h-electrode",
+    "num": "0101",
+    "numInt": 101,
+    "zh": "洗翠 顽皮雷弹",
+    "en": "Hisuian Electrode",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10232.png",
+    "section": "form"
+  },
+  {
+    "id": "a-exeggutor",
+    "num": "0103",
+    "numInt": 103,
+    "zh": "阿罗拉 椰蛋树",
+    "en": "Alolan Exeggutor",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10114.png",
+    "section": "form"
+  },
+  {
+    "id": "a-marowak",
+    "num": "0105",
+    "numInt": 105,
+    "zh": "阿罗拉 嗑头虫",
+    "en": "Alolan Marowak",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10115.png",
+    "section": "form"
+  },
+  {
+    "id": "g-weezing",
+    "num": "0110",
+    "numInt": 110,
+    "zh": "伽勒尔 双弹瓦斯",
+    "en": "Galarian Weezing",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10167.png",
+    "section": "form"
+  },
+  {
+    "id": "g-mrmime",
+    "num": "0122",
+    "numInt": 122,
+    "zh": "伽勒尔 魔墙人偶",
+    "en": "Galarian Mr. Mime",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10168.png",
+    "section": "form"
+  },
+  {
+    "id": "p-tauros-c",
+    "num": "0128",
+    "numInt": 128,
+    "zh": "帕底亚 肯泰罗 格斗种",
+    "en": "Paldean Tauros Combat",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10250.png",
+    "section": "form"
+  },
+  {
+    "id": "p-tauros-b",
+    "num": "0128",
+    "numInt": 128,
+    "zh": "帕底亚 肯泰罗 炎武种",
+    "en": "Paldean Tauros Blaze",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10251.png",
+    "section": "form"
+  },
+  {
+    "id": "p-tauros-a",
+    "num": "0128",
+    "numInt": 128,
+    "zh": "帕底亚 肯泰罗 水流种",
+    "en": "Paldean Tauros Aqua",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10252.png",
+    "section": "form"
+  },
+  {
+    "id": "g-articuno",
+    "num": "0144",
+    "numInt": 144,
+    "zh": "伽勒尔 急冻鸟",
+    "en": "Galarian Articuno",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10169.png",
+    "section": "form"
+  },
+  {
+    "id": "g-zapdos",
+    "num": "0145",
+    "numInt": 145,
+    "zh": "伽勒尔 闪电鸟",
+    "en": "Galarian Zapdos",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10170.png",
+    "section": "form"
+  },
+  {
+    "id": "g-moltres",
+    "num": "0146",
+    "numInt": 146,
+    "zh": "伽勒尔 火焰鸟",
+    "en": "Galarian Moltres",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10171.png",
+    "section": "form"
+  },
+  {
+    "id": "h-typhlosion",
+    "num": "0157",
+    "numInt": 157,
+    "zh": "洗翠 火暴兽",
+    "en": "Hisuian Typhlosion",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10233.png",
+    "section": "form"
+  },
+  {
+    "id": "p-wooper",
+    "num": "0194",
+    "numInt": 194,
+    "zh": "帕底亚 土蛙",
+    "en": "Paldean Wooper",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10253.png",
+    "section": "form"
+  },
+  {
+    "id": "g-slowking",
+    "num": "0199",
+    "numInt": 199,
+    "zh": "伽勒尔 呆呆王",
+    "en": "Galarian Slowking",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10172.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-d",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 D",
+    "en": "Unown D",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-c",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 C",
+    "en": "Unown C",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-b",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 B",
+    "en": "Unown B",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-a",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 A",
+    "en": "Unown A",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-h",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 H",
+    "en": "Unown H",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-g",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 G",
+    "en": "Unown G",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-j",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 J",
+    "en": "Unown J",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-e",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 E",
+    "en": "Unown E",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-k",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 K",
+    "en": "Unown K",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-f",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 F",
+    "en": "Unown F",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-i",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 I",
+    "en": "Unown I",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-l",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 L",
+    "en": "Unown L",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-r",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 R",
+    "en": "Unown R",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-q",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 Q",
+    "en": "Unown Q",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-o",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 O",
+    "en": "Unown O",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-m",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 M",
+    "en": "Unown M",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-p",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 P",
+    "en": "Unown P",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-s",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 S",
+    "en": "Unown S",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-t",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 T",
+    "en": "Unown T",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-n",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 N",
+    "en": "Unown N",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-u",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 U",
+    "en": "Unown U",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-v",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 V",
+    "en": "Unown V",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-em",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 !",
+    "en": "Unown !",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10039.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-qu",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 ?",
+    "en": "Unown ?",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10040.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-w",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 W",
+    "en": "Unown W",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-y",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 Y",
+    "en": "Unown Y",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-x",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 X",
+    "en": "Unown X",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "unown-z",
+    "num": "0201",
+    "numInt": 201,
+    "zh": "未知图腾 Z",
+    "en": "Unown Z",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/201.png",
+    "section": "form"
+  },
+  {
+    "id": "h-qwilfish",
+    "num": "0211",
+    "numInt": 211,
+    "zh": "洗翠 刺刺鱼",
+    "en": "Hisuian Qwilfish",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10234.png",
+    "section": "form"
+  },
+  {
+    "id": "h-sneasel",
+    "num": "0215",
+    "numInt": 215,
+    "zh": "洗翠 狃拉",
+    "en": "Hisuian Sneasel",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10235.png",
+    "section": "form"
+  },
+  {
+    "id": "g-corsola",
+    "num": "0222",
+    "numInt": 222,
+    "zh": "伽勒尔 太阳珊瑚",
+    "en": "Galarian Corsola",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10173.png",
+    "section": "form"
+  },
+  {
+    "id": "g-zigzagoon",
+    "num": "0263",
+    "numInt": 263,
+    "zh": "伽勒尔 蚯蚓猫",
+    "en": "Galarian Zigzagoon",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10174.png",
+    "section": "form"
+  },
+  {
+    "id": "g-linoone",
+    "num": "0264",
+    "numInt": 264,
+    "zh": "伽勒尔 直冲猫",
+    "en": "Galarian Linoone",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10175.png",
+    "section": "form"
+  },
+  {
+    "id": "combee-f",
+    "num": "0415",
+    "numInt": 415,
+    "zh": "三蜂巢 ♀",
+    "en": "Combee ♀",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/female/415.png",
+    "section": "gender"
+  },
+  {
+    "id": "shellos-west",
+    "num": "0422",
+    "numInt": 422,
+    "zh": "三地拿 西海",
+    "en": "Shellos West Sea",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/422.png",
+    "section": "form"
+  },
+  {
+    "id": "shellos-east",
+    "num": "0422",
+    "numInt": 422,
+    "zh": "三地拿 东海",
+    "en": "Shellos East Sea",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10015.png",
+    "section": "form"
+  },
+  {
+    "id": "gastrodon-east",
+    "num": "0423",
+    "numInt": 423,
+    "zh": "海兔兔 东海",
+    "en": "Gastrodon East Sea",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10016.png",
+    "section": "form"
+  },
+  {
+    "id": "gastrodon-west",
+    "num": "0423",
+    "numInt": 423,
+    "zh": "海兔兔 西海",
+    "en": "Gastrodon West Sea",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/423.png",
+    "section": "form"
+  },
+  {
+    "id": "hippopotas-f",
+    "num": "0449",
+    "numInt": 449,
+    "zh": "河马兽 ♀",
+    "en": "Hippopotas ♀",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/female/449.png",
+    "section": "gender"
+  },
+  {
+    "id": "hippowdon-f",
+    "num": "0450",
+    "numInt": 450,
+    "zh": "河马王 ♀",
+    "en": "Hippowdon ♀",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/female/450.png",
+    "section": "gender"
+  },
+  {
+    "id": "rotom-heat",
+    "num": "0479",
+    "numInt": 479,
+    "zh": "洛托姆 热量",
+    "en": "Heat Rotom",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10008.png",
+    "section": "form"
+  },
+  {
+    "id": "rotom-frost",
+    "num": "0479",
+    "numInt": 479,
+    "zh": "洛托姆 冷冻",
+    "en": "Frost Rotom",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10010.png",
+    "section": "form"
+  },
+  {
+    "id": "rotom-fan",
+    "num": "0479",
+    "numInt": 479,
+    "zh": "洛托姆 旋转",
+    "en": "Fan Rotom",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10011.png",
+    "section": "form"
+  },
+  {
+    "id": "rotom-wash",
+    "num": "0479",
+    "numInt": 479,
+    "zh": "洛托姆 清洗",
+    "en": "Wash Rotom",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10009.png",
+    "section": "form"
+  },
+  {
+    "id": "rotom-mow",
+    "num": "0479",
+    "numInt": 479,
+    "zh": "洛托姆 割草",
+    "en": "Mow Rotom",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10012.png",
+    "section": "form"
+  },
+  {
+    "id": "h-samurott",
+    "num": "0503",
+    "numInt": 503,
+    "zh": "洗翠 大剑鬼",
+    "en": "Hisuian Samurott",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10236.png",
+    "section": "form"
+  },
+  {
+    "id": "unfezant-f",
+    "num": "0521",
+    "numInt": 521,
+    "zh": "大尾火雉 ♀",
+    "en": "Unfezant ♀",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/female/521.png",
+    "section": "gender"
+  },
+  {
+    "id": "h-lilligant",
+    "num": "0549",
+    "numInt": 549,
+    "zh": "洗翠 花舞姬",
+    "en": "Hisuian Lilligant",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10237.png",
+    "section": "form"
+  },
+  {
+    "id": "basculin-blue",
+    "num": "0550",
+    "numInt": 550,
+    "zh": "斑纹鱼 蓝条纹",
+    "en": "Basculin Blue-Striped",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10016.png",
+    "section": "form"
+  },
+  {
+    "id": "basculin-red",
+    "num": "0550",
+    "numInt": 550,
+    "zh": "斑纹鱼 红条纹",
+    "en": "Basculin Red-Striped",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/550.png",
+    "section": "form"
+  },
+  {
+    "id": "g-darumaka",
+    "num": "0554",
+    "numInt": 554,
+    "zh": "伽勒尔 达摩狒狒",
+    "en": "Galarian Darumaka",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10176.png",
+    "section": "form"
+  },
+  {
+    "id": "g-darmanitan",
+    "num": "0555",
+    "numInt": 555,
+    "zh": "伽勒尔 火暴兽",
+    "en": "Galarian Darmanitan",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10177.png",
+    "section": "form"
+  },
+  {
+    "id": "g-yamask",
+    "num": "0562",
+    "numInt": 562,
+    "zh": "伽勒尔 哭哭面具",
+    "en": "Galarian Yamask",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10179.png",
+    "section": "form"
+  },
+  {
+    "id": "h-zorua",
+    "num": "0570",
+    "numInt": 570,
+    "zh": "洗翠 索罗亚",
+    "en": "Hisuian Zorua",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10238.png",
+    "section": "form"
+  },
+  {
+    "id": "h-zoroark",
+    "num": "0571",
+    "numInt": 571,
+    "zh": "洗翠 索罗亚克",
+    "en": "Hisuian Zoroark",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10239.png",
+    "section": "form"
+  },
+  {
+    "id": "deerling-summer",
+    "num": "0585",
+    "numInt": 585,
+    "zh": "小鹿斑比 夏",
+    "en": "Deerling Summer",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10017.png",
+    "section": "form"
+  },
+  {
+    "id": "deerling-spring",
+    "num": "0585",
+    "numInt": 585,
+    "zh": "小鹿斑比 春",
+    "en": "Deerling Spring",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/585.png",
+    "section": "form"
+  },
+  {
+    "id": "deerling-autumn",
+    "num": "0585",
+    "numInt": 585,
+    "zh": "小鹿斑比 秋",
+    "en": "Deerling Autumn",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10018.png",
+    "section": "form"
+  },
+  {
+    "id": "deerling-winter",
+    "num": "0585",
+    "numInt": 585,
+    "zh": "小鹿斑比 冬",
+    "en": "Deerling Winter",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10019.png",
+    "section": "form"
+  },
+  {
+    "id": "sawsbuck-spring",
+    "num": "0586",
+    "numInt": 586,
+    "zh": "惊角鹿 春",
+    "en": "Sawsbuck Spring",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/586.png",
+    "section": "form"
+  },
+  {
+    "id": "sawsbuck-autumn",
+    "num": "0586",
+    "numInt": 586,
+    "zh": "惊角鹿 秋",
+    "en": "Sawsbuck Autumn",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10021.png",
+    "section": "form"
+  },
+  {
+    "id": "sawsbuck-winter",
+    "num": "0586",
+    "numInt": 586,
+    "zh": "惊角鹿 冬",
+    "en": "Sawsbuck Winter",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10022.png",
+    "section": "form"
+  },
+  {
+    "id": "sawsbuck-summer",
+    "num": "0586",
+    "numInt": 586,
+    "zh": "惊角鹿 夏",
+    "en": "Sawsbuck Summer",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10020.png",
+    "section": "form"
+  },
+  {
+    "id": "frillish-f",
+    "num": "0592",
+    "numInt": 592,
+    "zh": "轻飘飘 ♀",
+    "en": "Frillish ♀",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/female/592.png",
+    "section": "gender"
+  },
+  {
+    "id": "jellicent-f",
+    "num": "0593",
+    "numInt": 593,
+    "zh": "胶冻王 ♀",
+    "en": "Jellicent ♀",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/female/593.png",
+    "section": "gender"
+  },
+  {
+    "id": "g-stunfisk",
+    "num": "0618",
+    "numInt": 618,
+    "zh": "伽勒尔 雷电纹",
+    "en": "Galarian Stunfisk",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10180.png",
+    "section": "form"
+  },
+  {
+    "id": "h-braviary",
+    "num": "0628",
+    "numInt": 628,
+    "zh": "洗翠 勇士雄鹰",
+    "en": "Hisuian Braviary",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10240.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-icy-snow",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 雪地",
+    "en": "Vivillon Icy Snow",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666-icy-snow.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-polar",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 极地",
+    "en": "Vivillon Polar",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666-polar.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-tundra",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 冻土",
+    "en": "Vivillon Tundra",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666-tundra.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-continental",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 大陆",
+    "en": "Vivillon Continental",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666-continental.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-garden",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 花园",
+    "en": "Vivillon Garden",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666-garden.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-elegant",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 高雅",
+    "en": "Vivillon Elegant",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666-elegant.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-meadow",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 草原",
+    "en": "Vivillon Meadow",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-modern",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 现代",
+    "en": "Vivillon Modern",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666-modern.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-marine",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 海洋",
+    "en": "Vivillon Marine",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666-marine.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-archipelago",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 群岛",
+    "en": "Vivillon Archipelago",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666-archipelago.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-high-plains",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 高原",
+    "en": "Vivillon High Plains",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666-high-plains.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-sandstorm",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 沙暴",
+    "en": "Vivillon Sandstorm",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666-sandstorm.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-river",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 河川",
+    "en": "Vivillon River",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666-river.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-monsoon",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 季风",
+    "en": "Vivillon Monsoon",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666-monsoon.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-savanna",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 热带",
+    "en": "Vivillon Savanna",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666-savanna.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-sun",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 太阳",
+    "en": "Vivillon Sun",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666-sun.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-ocean",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 蔚蓝",
+    "en": "Vivillon Ocean",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666-ocean.png",
+    "section": "form"
+  },
+  {
+    "id": "vivillon-jungle",
+    "num": "0666",
+    "numInt": 666,
+    "zh": "彩粉蝶 丛林",
+    "en": "Vivillon Jungle",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666-jungle.png",
+    "section": "form"
+  },
+  {
+    "id": "pyroar-f",
+    "num": "0668",
+    "numInt": 668,
+    "zh": "火炎狮 ♀",
+    "en": "Pyroar ♀",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/female/668.png",
+    "section": "gender"
+  },
+  {
+    "id": "flabebe-red",
+    "num": "0669",
+    "numInt": 669,
+    "zh": "花蓓蓓 红花",
+    "en": "Flabébé Red",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669.png",
+    "section": "form"
+  },
+  {
+    "id": "flabebe-yellow",
+    "num": "0669",
+    "numInt": 669,
+    "zh": "花蓓蓓 黄花",
+    "en": "Flabébé Yellow",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669-yellow.png",
+    "section": "form"
+  },
+  {
+    "id": "flabebe-orange",
+    "num": "0669",
+    "numInt": 669,
+    "zh": "花蓓蓓 橙花",
+    "en": "Flabébé Orange",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669-orange.png",
+    "section": "form"
+  },
+  {
+    "id": "flabebe-blue",
+    "num": "0669",
+    "numInt": 669,
+    "zh": "花蓓蓓 蓝花",
+    "en": "Flabébé Blue",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669-blue.png",
+    "section": "form"
+  },
+  {
+    "id": "flabebe-white",
+    "num": "0669",
+    "numInt": 669,
+    "zh": "花蓓蓓 白花",
+    "en": "Flabébé White",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669-white.png",
+    "section": "form"
+  },
+  {
+    "id": "floette-red",
+    "num": "0670",
+    "numInt": 670,
+    "zh": "花叶蒂 红花",
+    "en": "Floette Red",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/670.png",
+    "section": "form"
+  },
+  {
+    "id": "floette-yellow",
+    "num": "0670",
+    "numInt": 670,
+    "zh": "花叶蒂 黄花",
+    "en": "Floette Yellow",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/670-yellow.png",
+    "section": "form"
+  },
+  {
+    "id": "floette-orange",
+    "num": "0670",
+    "numInt": 670,
+    "zh": "花叶蒂 橙花",
+    "en": "Floette Orange",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/670-orange.png",
+    "section": "form"
+  },
+  {
+    "id": "floette-blue",
+    "num": "0670",
+    "numInt": 670,
+    "zh": "花叶蒂 蓝花",
+    "en": "Floette Blue",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/670-blue.png",
+    "section": "form"
+  },
+  {
+    "id": "floette-white",
+    "num": "0670",
+    "numInt": 670,
+    "zh": "花叶蒂 白花",
+    "en": "Floette White",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/670-white.png",
+    "section": "form"
+  },
+  {
+    "id": "florges-red",
+    "num": "0671",
+    "numInt": 671,
+    "zh": "花洁夫人 红花",
+    "en": "Florges Red",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671.png",
+    "section": "form"
+  },
+  {
+    "id": "florges-yellow",
+    "num": "0671",
+    "numInt": 671,
+    "zh": "花洁夫人 黄花",
+    "en": "Florges Yellow",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671-yellow.png",
+    "section": "form"
+  },
+  {
+    "id": "florges-orange",
+    "num": "0671",
+    "numInt": 671,
+    "zh": "花洁夫人 橙花",
+    "en": "Florges Orange",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671-orange.png",
+    "section": "form"
+  },
+  {
+    "id": "florges-blue",
+    "num": "0671",
+    "numInt": 671,
+    "zh": "花洁夫人 蓝花",
+    "en": "Florges Blue",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671-blue.png",
+    "section": "form"
+  },
+  {
+    "id": "florges-white",
+    "num": "0671",
+    "numInt": 671,
+    "zh": "花洁夫人 白花",
+    "en": "Florges White",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671-white.png",
+    "section": "form"
+  },
+  {
+    "id": "furfrou-heart",
+    "num": "0676",
+    "numInt": 676,
+    "zh": "多多美 心形型",
+    "en": "Furfrou Heart",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676-heart.png",
+    "section": "form"
+  },
+  {
+    "id": "furfrou-star",
+    "num": "0676",
+    "numInt": 676,
+    "zh": "多多美 星形型",
+    "en": "Furfrou Star",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676-star.png",
+    "section": "form"
+  },
+  {
+    "id": "furfrou-diamond",
+    "num": "0676",
+    "numInt": 676,
+    "zh": "多多美 钻石型",
+    "en": "Furfrou Diamond",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676-diamond.png",
+    "section": "form"
+  },
+  {
+    "id": "furfrou-natural",
+    "num": "0676",
+    "numInt": 676,
+    "zh": "多多美 自然型",
+    "en": "Furfrou Natural",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676.png",
+    "section": "form"
+  },
+  {
+    "id": "furfrou-debutante",
+    "num": "0676",
+    "numInt": 676,
+    "zh": "多多美 解构型",
+    "en": "Furfrou Debutante",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676-debutante.png",
+    "section": "form"
+  },
+  {
+    "id": "furfrou-matron",
+    "num": "0676",
+    "numInt": 676,
+    "zh": "多多美 玛特洛型",
+    "en": "Furfrou Matron",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676-matron.png",
+    "section": "form"
+  },
+  {
+    "id": "furfrou-dandy",
+    "num": "0676",
+    "numInt": 676,
+    "zh": "多多美 芬芳型",
+    "en": "Furfrou Dandy",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676-dandy.png",
+    "section": "form"
+  },
+  {
+    "id": "furfrou-la-reine",
+    "num": "0676",
+    "numInt": 676,
+    "zh": "多多美 拉鲁斯型",
+    "en": "Furfrou La Reine",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676-la-reine.png",
+    "section": "form"
+  },
+  {
+    "id": "furfrou-pharaoh",
+    "num": "0676",
+    "numInt": 676,
+    "zh": "多多美 法拉奥型",
+    "en": "Furfrou Pharaoh",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676-pharaoh.png",
+    "section": "form"
+  },
+  {
+    "id": "furfrou-kabuki",
+    "num": "0676",
+    "numInt": 676,
+    "zh": "多多美 卡布型",
+    "en": "Furfrou Kabuki",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676-kabuki.png",
+    "section": "form"
+  },
+  {
+    "id": "meowstic-f",
+    "num": "0678",
+    "numInt": 678,
+    "zh": "超能妙喵 ♀",
+    "en": "Meowstic ♀",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/female/678.png",
+    "section": "gender"
+  },
+  {
+    "id": "h-sliggoo",
+    "num": "0705",
+    "numInt": 705,
+    "zh": "洗翠 黏美儿",
+    "en": "Hisuian Sliggoo",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10241.png",
+    "section": "form"
+  },
+  {
+    "id": "h-goodra",
+    "num": "0706",
+    "numInt": 706,
+    "zh": "洗翠 黏美龙",
+    "en": "Hisuian Goodra",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10242.png",
+    "section": "form"
+  },
+  {
+    "id": "pumpkaboo-average",
+    "num": "0710",
+    "numInt": 710,
+    "zh": "南瓜精 中型",
+    "en": "Pumpkaboo Average",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/710.png",
+    "section": "form"
+  },
+  {
+    "id": "pumpkaboo-small",
+    "num": "0710",
+    "numInt": 710,
+    "zh": "南瓜精 小型",
+    "en": "Pumpkaboo Small",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10027.png",
+    "section": "form"
+  },
+  {
+    "id": "pumpkaboo-large",
+    "num": "0710",
+    "numInt": 710,
+    "zh": "南瓜精 大型",
+    "en": "Pumpkaboo Large",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10028.png",
+    "section": "form"
+  },
+  {
+    "id": "pumpkaboo-super",
+    "num": "0710",
+    "numInt": 710,
+    "zh": "南瓜精 超大型",
+    "en": "Pumpkaboo Super",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10029.png",
+    "section": "form"
+  },
+  {
+    "id": "gourgeist-small",
+    "num": "0711",
+    "numInt": 711,
+    "zh": "南瓜怪人 小型",
+    "en": "Gourgeist Small",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10030.png",
+    "section": "form"
+  },
+  {
+    "id": "gourgeist-average",
+    "num": "0711",
+    "numInt": 711,
+    "zh": "南瓜怪人 中型",
+    "en": "Gourgeist Average",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/711.png",
+    "section": "form"
+  },
+  {
+    "id": "gourgeist-super",
+    "num": "0711",
+    "numInt": 711,
+    "zh": "南瓜怪人 超大型",
+    "en": "Gourgeist Super",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10032.png",
+    "section": "form"
+  },
+  {
+    "id": "gourgeist-large",
+    "num": "0711",
+    "numInt": 711,
+    "zh": "南瓜怪人 大型",
+    "en": "Gourgeist Large",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10031.png",
+    "section": "form"
+  },
+  {
+    "id": "h-avalugg",
+    "num": "0713",
+    "numInt": 713,
+    "zh": "洗翠 冰岩怪",
+    "en": "Hisuian Avalugg",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10243.png",
+    "section": "form"
+  },
+  {
+    "id": "h-decidueye",
+    "num": "0724",
+    "numInt": 724,
+    "zh": "洗翠 钻草帽鸮",
+    "en": "Hisuian Decidueye",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10244.png",
+    "section": "form"
+  },
+  {
+    "id": "oricorio-pom",
+    "num": "0741",
+    "numInt": 741,
+    "zh": "花舞鸟 黄",
+    "en": "Oricorio Pom-Pom",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10123.png",
+    "section": "form"
+  },
+  {
+    "id": "oricorio-baile",
+    "num": "0741",
+    "numInt": 741,
+    "zh": "花舞鸟 红",
+    "en": "Oricorio Baile",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/741.png",
+    "section": "form"
+  },
+  {
+    "id": "oricorio-pau",
+    "num": "0741",
+    "numInt": 741,
+    "zh": "花舞鸟 粉",
+    "en": "Oricorio Pa'u",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10124.png",
+    "section": "form"
+  },
+  {
+    "id": "oricorio-sensu",
+    "num": "0741",
+    "numInt": 741,
+    "zh": "花舞鸟 紫",
+    "en": "Oricorio Sensu",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10125.png",
+    "section": "form"
+  },
+  {
+    "id": "lycanroc-midnight",
+    "num": "0745",
+    "numInt": 745,
+    "zh": "鬃岩狼人 夜",
+    "en": "Lycanroc Midnight",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10126.png",
+    "section": "form"
+  },
+  {
+    "id": "lycanroc-dusk",
+    "num": "0745",
+    "numInt": 745,
+    "zh": "鬃岩狼人 黄昏",
+    "en": "Lycanroc Dusk",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10152.png",
+    "section": "form"
+  },
+  {
+    "id": "lycanroc-midday",
+    "num": "0745",
+    "numInt": 745,
+    "zh": "鬃岩狼人 昼",
+    "en": "Lycanroc Midday",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/745.png",
+    "section": "form"
+  },
+  {
+    "id": "wishiwashi-school",
+    "num": "0746",
+    "numInt": 746,
+    "zh": "弱丁鱼 群体",
+    "en": "Wishiwashi School",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10127.png",
+    "section": "form"
+  },
+  {
+    "id": "wishiwashi-solo",
+    "num": "0746",
+    "numInt": 746,
+    "zh": "弱丁鱼 单独",
+    "en": "Wishiwashi Solo",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/746.png",
+    "section": "form"
+  },
+  {
+    "id": "minior-red",
+    "num": "0774",
+    "numInt": 774,
+    "zh": "小陨星 红核",
+    "en": "Minior Red Core",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10136.png",
+    "section": "form"
+  },
+  {
+    "id": "minior-orange",
+    "num": "0774",
+    "numInt": 774,
+    "zh": "小陨星 橙核",
+    "en": "Minior Orange Core",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10137.png",
+    "section": "form"
+  },
+  {
+    "id": "minior-blue",
+    "num": "0774",
+    "numInt": 774,
+    "zh": "小陨星 蓝核",
+    "en": "Minior Blue Core",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10140.png",
+    "section": "form"
+  },
+  {
+    "id": "minior-indigo",
+    "num": "0774",
+    "numInt": 774,
+    "zh": "小陨星 靛核",
+    "en": "Minior Indigo Core",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10141.png",
+    "section": "form"
+  },
+  {
+    "id": "minior-yellow",
+    "num": "0774",
+    "numInt": 774,
+    "zh": "小陨星 黄核",
+    "en": "Minior Yellow Core",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10138.png",
+    "section": "form"
+  },
+  {
+    "id": "minior-violet",
+    "num": "0774",
+    "numInt": 774,
+    "zh": "小陨星 紫核",
+    "en": "Minior Violet Core",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10142.png",
+    "section": "form"
+  },
+  {
+    "id": "minior-green",
+    "num": "0774",
+    "numInt": 774,
+    "zh": "小陨星 绿核",
+    "en": "Minior Green Core",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10139.png",
+    "section": "form"
+  },
+  {
+    "id": "mimikyu-busted",
+    "num": "0778",
+    "numInt": 778,
+    "zh": "谜拟丘 现身",
+    "en": "Mimikyu Busted",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10143.png",
+    "section": "form"
+  },
+  {
+    "id": "mimikyu-disguised",
+    "num": "0778",
+    "numInt": 778,
+    "zh": "谜拟丘 伪装",
+    "en": "Mimikyu Disguised",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/778.png",
+    "section": "form"
+  },
+  {
+    "id": "toxtricity-low-key",
+    "num": "0849",
+    "numInt": 849,
+    "zh": "颤弦蝾螈 弱",
+    "en": "Toxtricity Low Key",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10184.png",
+    "section": "form"
+  },
+  {
+    "id": "toxtricity-amped",
+    "num": "0849",
+    "numInt": 849,
+    "zh": "颤弦蝾螈 强",
+    "en": "Toxtricity Amped",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/849.png",
+    "section": "form"
+  },
+  {
+    "id": "indeedee-f",
+    "num": "0876",
+    "numInt": 876,
+    "zh": "多宝秘密 ♀",
+    "en": "Indeedee ♀",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/female/876.png",
+    "section": "gender"
+  },
+  {
+    "id": "basculegion-f",
+    "num": "0902",
+    "numInt": 902,
+    "zh": "王者斑纹鱼 ♀",
+    "en": "Basculegion ♀",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/female/902.png",
+    "section": "gender"
+  },
+  {
+    "id": "oinkologne-f",
+    "num": "0916",
+    "numInt": 916,
+    "zh": "香香猪 ♀",
+    "en": "Oinkologne ♀",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/female/916.png",
+    "section": "gender"
+  },
+  {
+    "id": "maushold-four",
+    "num": "0925",
+    "numInt": 925,
+    "zh": "鼠鼠一家 四口",
+    "en": "Maushold Family of Four",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/925.png",
+    "section": "form"
+  },
+  {
+    "id": "maushold-three",
+    "num": "0925",
+    "numInt": 925,
+    "zh": "鼠鼠一家 三口",
+    "en": "Maushold Family of Three",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10257.png",
+    "section": "form"
+  },
+  {
+    "id": "squawk-green",
+    "num": "0931",
+    "numInt": 931,
+    "zh": "喳喳鸟 绿",
+    "en": "Squawkabilly Green",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/931.png",
+    "section": "form"
+  },
+  {
+    "id": "squawk-blue",
+    "num": "0931",
+    "numInt": 931,
+    "zh": "喳喳鸟 蓝",
+    "en": "Squawkabilly Blue",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10260.png",
+    "section": "form"
+  },
+  {
+    "id": "squawk-white",
+    "num": "0931",
+    "numInt": 931,
+    "zh": "喳喳鸟 白",
+    "en": "Squawkabilly White",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10262.png",
+    "section": "form"
+  },
+  {
+    "id": "squawk-yellow",
+    "num": "0931",
+    "numInt": 931,
+    "zh": "喳喳鸟 黄",
+    "en": "Squawkabilly Yellow",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10261.png",
+    "section": "form"
+  },
+  {
+    "id": "palafin-hero",
+    "num": "0964",
+    "numInt": 964,
+    "zh": "海豚侠 英雄",
+    "en": "Palafin Hero",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10256.png",
+    "section": "form"
+  },
+  {
+    "id": "palafin-zero",
+    "num": "0964",
+    "numInt": 964,
+    "zh": "海豚侠 零",
+    "en": "Palafin Zero",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/964.png",
+    "section": "form"
+  },
+  {
+    "id": "tatsugiri-curly",
+    "num": "0977",
+    "numInt": 977,
+    "zh": "龙卷寿司 卷曲",
+    "en": "Tatsugiri Curly",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/978.png",
+    "section": "form"
+  },
+  {
+    "id": "tatsugiri-stretchy",
+    "num": "0977",
+    "numInt": 977,
+    "zh": "龙卷寿司 伸展",
+    "en": "Tatsugiri Stretchy",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10259.png",
+    "section": "form"
+  },
+  {
+    "id": "tatsugiri-droopy",
+    "num": "0977",
+    "numInt": 977,
+    "zh": "龙卷寿司 耷拉",
+    "en": "Tatsugiri Droopy",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10258.png",
+    "section": "form"
+  },
+  {
+    "id": "dudunsparce-two",
+    "num": "0982",
+    "numInt": 982,
+    "zh": "大长蛇 两段",
+    "en": "Dudunsparce Two-Segment",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/982.png",
+    "section": "form"
+  },
+  {
+    "id": "dudunsparce-three",
+    "num": "0982",
+    "numInt": 982,
+    "zh": "大长蛇 三段",
+    "en": "Dudunsparce Three-Segment",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10255.png",
+    "section": "form"
+  },
+  {
+    "id": "gimmighoul-chest",
+    "num": "0999",
+    "numInt": 999,
+    "zh": "宝箱小僵尸 箱子",
+    "en": "Gimmighoul Chest",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/999.png",
+    "section": "form"
+  },
+  {
+    "id": "gimmighoul-roaming",
+    "num": "0999",
+    "numInt": 999,
+    "zh": "宝箱小僵尸 游荡",
+    "en": "Gimmighoul Roaming",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10263.png",
+    "section": "form"
+  },
+  {
+    "id": "poltcha-artisan",
+    "num": "1012",
+    "numInt": 1012,
+    "zh": "抹茶幽灵 正品",
+    "en": "Poltchageist Artisan",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10261.png",
+    "section": "form"
+  },
+  {
+    "id": "poltcha-counterfeit",
+    "num": "1012",
+    "numInt": 1012,
+    "zh": "抹茶幽灵 仿冒",
+    "en": "Poltchageist Counterfeit",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1012.png",
+    "section": "form"
+  },
+  {
+    "id": "sinistcha-master",
+    "num": "1013",
+    "numInt": 1013,
+    "zh": "抹茶幽灵茶 杰作",
+    "en": "Sinistcha Masterpiece",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10262.png",
+    "section": "form"
+  },
+  {
+    "id": "sinistcha-unremark",
+    "num": "1013",
+    "numInt": 1013,
+    "zh": "抹茶幽灵茶 普通",
+    "en": "Sinistcha Unremarkable",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1013.png",
+    "section": "form"
+  },
+  {
+    "id": "pikachu-original-cap",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 XY小智帽",
+    "en": "Pikachu Ash's XY Cap",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10094.png",
+    "section": "event"
+  },
+  {
+    "id": "pikachu-hoenn-cap",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 ORAS小智帽",
+    "en": "Pikachu Ash's ORAS Cap",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10095.png",
+    "section": "event"
+  },
+  {
+    "id": "pikachu-sinnoh-cap",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 DP小智帽",
+    "en": "Pikachu Ash's DP Cap",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10096.png",
+    "section": "event"
+  },
+  {
+    "id": "pikachu-unova-cap",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 BW小智帽",
+    "en": "Pikachu Ash's BW Cap",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10097.png",
+    "section": "event"
+  },
+  {
+    "id": "pikachu-kalos-cap",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 XY小智帽2",
+    "en": "Pikachu Ash's Kalos Cap",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10098.png",
+    "section": "event"
+  },
+  {
+    "id": "pikachu-alola-cap",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 SM小智帽",
+    "en": "Pikachu Ash's Alola Cap",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10099.png",
+    "section": "event"
+  },
+  {
+    "id": "pikachu-partner-cap",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 搭档帽",
+    "en": "Pikachu Partner Cap",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10148.png",
+    "section": "event"
+  },
+  {
+    "id": "pikachu-world-cap",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 世界帽",
+    "en": "Pikachu World Cap",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10160.png",
+    "section": "event"
+  },
+  {
+    "id": "magearna-original",
+    "num": "0801",
+    "numInt": 801,
+    "zh": "马盖娜 原色",
+    "en": "Magearna Original Color",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10147.png",
+    "section": "event"
+  },
+  {
+    "id": "zarude-dada",
+    "num": "0893",
+    "numInt": 893,
+    "zh": "扎鲁德 爸爸",
+    "en": "Zarude Dada",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10192.png",
+    "section": "event"
+  },
+  {
+    "id": "calyrex-ice",
+    "num": "0898",
+    "numInt": 898,
+    "zh": "蕾冠王 白马骑士",
+    "en": "Calyrex Ice Rider",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10193.png",
+    "section": "event"
+  },
+  {
+    "id": "calyrex-shadow",
+    "num": "0898",
+    "numInt": 898,
+    "zh": "蕾冠王 黑马骑士",
+    "en": "Calyrex Shadow Rider",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10194.png",
+    "section": "event"
+  },
+  {
+    "id": "hoopa-unbound",
+    "num": "0720",
+    "numInt": 720,
+    "zh": "胡帕 魔圈解放",
+    "en": "Hoopa Unbound",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10086.png",
+    "section": "event"
+  },
+  {
+    "id": "shaymin-sky",
+    "num": "0492",
+    "numInt": 492,
+    "zh": "谢米 天空形",
+    "en": "Shaymin Sky Forme",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10006.png",
+    "section": "event"
+  },
+  {
+    "id": "keldeo-resolute",
+    "num": "0647",
+    "numInt": 647,
+    "zh": "克雷色利亚 觉悟形",
+    "en": "Keldeo Resolute Forme",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10024.png",
+    "section": "event"
+  },
+  {
+    "id": "meloetta-pirouette",
+    "num": "0648",
+    "numInt": 648,
+    "zh": "梅洛耶塔 歌舞形",
+    "en": "Meloetta Pirouette Forme",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10018.png",
+    "section": "event"
+  },
+  {
+    "id": "necrozma-dawn",
+    "num": "0800",
+    "numInt": 800,
+    "zh": "奈克洛兹玛 日食",
+    "en": "Necrozma Dawn Wings",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10156.png",
+    "section": "event"
+  },
+  {
+    "id": "necrozma-dusk",
+    "num": "0800",
+    "numInt": 800,
+    "zh": "奈克洛兹玛 月食",
+    "en": "Necrozma Dusk Mane",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10155.png",
+    "section": "event"
+  },
+  {
+    "id": "urshifu-rapid-strike",
+    "num": "0892",
+    "numInt": 892,
+    "zh": "武道熊师 连击流",
+    "en": "Urshifu Rapid Strike Style",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10191.png",
+    "section": "event"
+  },
+  {
+    "id": "greninja-ash",
+    "num": "0658",
+    "numInt": 658,
+    "zh": "甲贺忍蛙 小智",
+    "en": "Ash-Greninja",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10117.png",
+    "section": "form"
+  },
+  {
+    "id": "deoxys-attack",
+    "num": "0386",
+    "numInt": 386,
+    "zh": "代欧奇希斯 攻击形态",
+    "en": "Deoxys Attack Forme",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10001.png",
+    "section": "form"
+  },
+  {
+    "id": "deoxys-defense",
+    "num": "0386",
+    "numInt": 386,
+    "zh": "代欧奇希斯 防御形态",
+    "en": "Deoxys Defense Forme",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10002.png",
+    "section": "form"
+  },
+  {
+    "id": "deoxys-speed",
+    "num": "0386",
+    "numInt": 386,
+    "zh": "代欧奇希斯 速度形态",
+    "en": "Deoxys Speed Forme",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10003.png",
+    "section": "form"
+  },
+  {
+    "id": "burmy-sandy",
+    "num": "0412",
+    "numInt": 412,
+    "zh": "蓑衣虫 砂地蓑衣",
+    "en": "Burmy Sandy Cloak",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412-sandy.png",
+    "section": "form"
+  },
+  {
+    "id": "burmy-trash",
+    "num": "0412",
+    "numInt": 412,
+    "zh": "蓑衣虫 垃圾蓑衣",
+    "en": "Burmy Trash Cloak",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412-trash.png",
+    "section": "form"
+  },
+  {
+    "id": "wormadam-sandy",
+    "num": "0413",
+    "numInt": 413,
+    "zh": "结草贵妇 砂地蓑衣",
+    "en": "Wormadam Sandy Cloak",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10004.png",
+    "section": "form"
+  },
+  {
+    "id": "wormadam-trash",
+    "num": "0413",
+    "numInt": 413,
+    "zh": "结草贵妇 垃圾蓑衣",
+    "en": "Wormadam Trash Cloak",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10005.png",
+    "section": "form"
+  },
+  {
+    "id": "genesect-shock",
+    "num": "0649",
+    "numInt": 649,
+    "zh": "盖诺赛克特 电击驱动",
+    "en": "Genesect (Shock Drive)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10033.png",
+    "section": "form"
+  },
+  {
+    "id": "genesect-burn",
+    "num": "0649",
+    "numInt": 649,
+    "zh": "盖诺赛克特 火焰驱动",
+    "en": "Genesect (Burn Drive)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10034.png",
+    "section": "form"
+  },
+  {
+    "id": "genesect-chill",
+    "num": "0649",
+    "numInt": 649,
+    "zh": "盖诺赛克特 冰冻驱动",
+    "en": "Genesect (Chill Drive)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10035.png",
+    "section": "form"
+  },
+  {
+    "id": "genesect-douse",
+    "num": "0649",
+    "numInt": 649,
+    "zh": "盖诺赛克特 水流驱动",
+    "en": "Genesect (Douse Drive)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10036.png",
+    "section": "form"
+  },
+  {
+    "id": "zygarde-10",
+    "num": "0718",
+    "numInt": 718,
+    "zh": "基格尔德 10%形态",
+    "en": "Zygarde 10% Forme",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10181.png",
+    "section": "form"
+  },
+  {
+    "id": "zygarde-50",
+    "num": "0718",
+    "numInt": 718,
+    "zh": "基格尔德 50% 力量结构体",
+    "en": "Zygarde 50% Power Construct",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/718.png",
+    "section": "form"
+  },
+  {
+    "id": "ogerpon-wellspring-mask",
+    "num": "1017",
+    "numInt": 1017,
+    "zh": "犬木椿 井水面具",
+    "en": "Ogerpon Wellspring Mask",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10273.png",
+    "section": "form"
+  },
+  {
+    "id": "ogerpon-hearthflame-mask",
+    "num": "1017",
+    "numInt": 1017,
+    "zh": "犬木椿 熔岩面具",
+    "en": "Ogerpon Hearthflame Mask",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10274.png",
+    "section": "form"
+  },
+  {
+    "id": "ogerpon-cornerstone-mask",
+    "num": "1017",
+    "numInt": 1017,
+    "zh": "犬木椿 磐石面具",
+    "en": "Ogerpon Cornerstone Mask",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10275.png",
+    "section": "form"
+  },
+  {
+    "id": "terapagos-terastal",
+    "num": "1024",
+    "numInt": 1024,
+    "zh": "特拉帕戈斯 星晶形态",
+    "en": "Terapagos Terastal Form",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10276.png",
+    "section": "form"
+  },
+  {
+    "id": "terapagos-stellar",
+    "num": "1024",
+    "numInt": 1024,
+    "zh": "特拉帕戈斯 王者形态",
+    "en": "Terapagos Stellar Form",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10277.png",
+    "section": "form"
+  },
+  {
+    "id": "arceus-fighting",
+    "num": "0493",
+    "numInt": 493,
+    "zh": "阿尔宙斯 格斗属性",
+    "en": "Arceus (Fighting)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-fighting.png",
+    "section": "form"
+  },
+  {
+    "id": "arceus-flying",
+    "num": "0493",
+    "numInt": 493,
+    "zh": "阿尔宙斯 飞翔属性",
+    "en": "Arceus (Flying)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-flying.png",
+    "section": "form"
+  },
+  {
+    "id": "arceus-poison",
+    "num": "0493",
+    "numInt": 493,
+    "zh": "阿尔宙斯 毒属性",
+    "en": "Arceus (Poison)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-poison.png",
+    "section": "form"
+  },
+  {
+    "id": "arceus-ground",
+    "num": "0493",
+    "numInt": 493,
+    "zh": "阿尔宙斯 大地属性",
+    "en": "Arceus (Ground)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-ground.png",
+    "section": "form"
+  },
+  {
+    "id": "arceus-rock",
+    "num": "0493",
+    "numInt": 493,
+    "zh": "阿尔宙斯 岩石属性",
+    "en": "Arceus (Rock)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-rock.png",
+    "section": "form"
+  },
+  {
+    "id": "arceus-bug",
+    "num": "0493",
+    "numInt": 493,
+    "zh": "阿尔宙斯 虫属性",
+    "en": "Arceus (Bug)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-bug.png",
+    "section": "form"
+  },
+  {
+    "id": "arceus-ghost",
+    "num": "0493",
+    "numInt": 493,
+    "zh": "阿尔宙斯 幽灵属性",
+    "en": "Arceus (Ghost)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-ghost.png",
+    "section": "form"
+  },
+  {
+    "id": "arceus-steel",
+    "num": "0493",
+    "numInt": 493,
+    "zh": "阿尔宙斯 钢属性",
+    "en": "Arceus (Steel)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-steel.png",
+    "section": "form"
+  },
+  {
+    "id": "arceus-fire",
+    "num": "0493",
+    "numInt": 493,
+    "zh": "阿尔宙斯 火属性",
+    "en": "Arceus (Fire)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-fire.png",
+    "section": "form"
+  },
+  {
+    "id": "arceus-water",
+    "num": "0493",
+    "numInt": 493,
+    "zh": "阿尔宙斯 水属性",
+    "en": "Arceus (Water)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-water.png",
+    "section": "form"
+  },
+  {
+    "id": "arceus-grass",
+    "num": "0493",
+    "numInt": 493,
+    "zh": "阿尔宙斯 草属性",
+    "en": "Arceus (Grass)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-grass.png",
+    "section": "form"
+  },
+  {
+    "id": "arceus-electric",
+    "num": "0493",
+    "numInt": 493,
+    "zh": "阿尔宙斯 电属性",
+    "en": "Arceus (Electric)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-electric.png",
+    "section": "form"
+  },
+  {
+    "id": "arceus-psychic",
+    "num": "0493",
+    "numInt": 493,
+    "zh": "阿尔宙斯 超能力属性",
+    "en": "Arceus (Psychic)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-psychic.png",
+    "section": "form"
+  },
+  {
+    "id": "arceus-ice",
+    "num": "0493",
+    "numInt": 493,
+    "zh": "阿尔宙斯 冰属性",
+    "en": "Arceus (Ice)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-ice.png",
+    "section": "form"
+  },
+  {
+    "id": "arceus-dragon",
+    "num": "0493",
+    "numInt": 493,
+    "zh": "阿尔宙斯 龙属性",
+    "en": "Arceus (Dragon)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-dragon.png",
+    "section": "form"
+  },
+  {
+    "id": "arceus-dark",
+    "num": "0493",
+    "numInt": 493,
+    "zh": "阿尔宙斯 恶属性",
+    "en": "Arceus (Dark)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-dark.png",
+    "section": "form"
+  },
+  {
+    "id": "arceus-fairy",
+    "num": "0493",
+    "numInt": 493,
+    "zh": "阿尔宙斯 妖精属性",
+    "en": "Arceus (Fairy)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-fairy.png",
+    "section": "form"
+  },
+  {
+    "id": "silvally-fighting",
+    "num": "0773",
+    "numInt": 773,
+    "zh": "银伴战兽 格斗记忆",
+    "en": "Silvally (Fighting)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-fighting.png",
+    "section": "form"
+  },
+  {
+    "id": "silvally-flying",
+    "num": "0773",
+    "numInt": 773,
+    "zh": "银伴战兽 飞翔记忆",
+    "en": "Silvally (Flying)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-flying.png",
+    "section": "form"
+  },
+  {
+    "id": "silvally-poison",
+    "num": "0773",
+    "numInt": 773,
+    "zh": "银伴战兽 毒记忆",
+    "en": "Silvally (Poison)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-poison.png",
+    "section": "form"
+  },
+  {
+    "id": "silvally-ground",
+    "num": "0773",
+    "numInt": 773,
+    "zh": "银伴战兽 大地记忆",
+    "en": "Silvally (Ground)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-ground.png",
+    "section": "form"
+  },
+  {
+    "id": "silvally-rock",
+    "num": "0773",
+    "numInt": 773,
+    "zh": "银伴战兽 岩石记忆",
+    "en": "Silvally (Rock)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-rock.png",
+    "section": "form"
+  },
+  {
+    "id": "silvally-bug",
+    "num": "0773",
+    "numInt": 773,
+    "zh": "银伴战兽 虫记忆",
+    "en": "Silvally (Bug)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-bug.png",
+    "section": "form"
+  },
+  {
+    "id": "silvally-ghost",
+    "num": "0773",
+    "numInt": 773,
+    "zh": "银伴战兽 幽灵记忆",
+    "en": "Silvally (Ghost)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-ghost.png",
+    "section": "form"
+  },
+  {
+    "id": "silvally-steel",
+    "num": "0773",
+    "numInt": 773,
+    "zh": "银伴战兽 钢记忆",
+    "en": "Silvally (Steel)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-steel.png",
+    "section": "form"
+  },
+  {
+    "id": "silvally-fire",
+    "num": "0773",
+    "numInt": 773,
+    "zh": "银伴战兽 火记忆",
+    "en": "Silvally (Fire)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-fire.png",
+    "section": "form"
+  },
+  {
+    "id": "silvally-water",
+    "num": "0773",
+    "numInt": 773,
+    "zh": "银伴战兽 水记忆",
+    "en": "Silvally (Water)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-water.png",
+    "section": "form"
+  },
+  {
+    "id": "silvally-grass",
+    "num": "0773",
+    "numInt": 773,
+    "zh": "银伴战兽 草记忆",
+    "en": "Silvally (Grass)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-grass.png",
+    "section": "form"
+  },
+  {
+    "id": "silvally-electric",
+    "num": "0773",
+    "numInt": 773,
+    "zh": "银伴战兽 电记忆",
+    "en": "Silvally (Electric)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-electric.png",
+    "section": "form"
+  },
+  {
+    "id": "silvally-psychic",
+    "num": "0773",
+    "numInt": 773,
+    "zh": "银伴战兽 超能力记忆",
+    "en": "Silvally (Psychic)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-psychic.png",
+    "section": "form"
+  },
+  {
+    "id": "silvally-ice",
+    "num": "0773",
+    "numInt": 773,
+    "zh": "银伴战兽 冰记忆",
+    "en": "Silvally (Ice)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-ice.png",
+    "section": "form"
+  },
+  {
+    "id": "silvally-dragon",
+    "num": "0773",
+    "numInt": 773,
+    "zh": "银伴战兽 龙记忆",
+    "en": "Silvally (Dragon)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-dragon.png",
+    "section": "form"
+  },
+  {
+    "id": "silvally-dark",
+    "num": "0773",
+    "numInt": 773,
+    "zh": "银伴战兽 恶记忆",
+    "en": "Silvally (Dark)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-dark.png",
+    "section": "form"
+  },
+  {
+    "id": "silvally-fairy",
+    "num": "0773",
+    "numInt": 773,
+    "zh": "银伴战兽 妖精记忆",
+    "en": "Silvally (Fairy)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-fairy.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-vanilla-cream-berry-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 香草奶油·果实糖",
+    "en": "Alcremie (vanilla-cream berry-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10197.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-vanilla-cream-love-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 香草奶油·爱心糖",
+    "en": "Alcremie (vanilla-cream love-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10198.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-vanilla-cream-star-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 香草奶油·星星糖",
+    "en": "Alcremie (vanilla-cream star-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10199.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-vanilla-cream-clover-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 香草奶油·三叶草糖",
+    "en": "Alcremie (vanilla-cream clover-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10200.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-vanilla-cream-flower-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 香草奶油·花朵糖",
+    "en": "Alcremie (vanilla-cream flower-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10201.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-vanilla-cream-ribbon-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 香草奶油·缎带糖",
+    "en": "Alcremie (vanilla-cream ribbon-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10202.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-ruby-cream-strawberry-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 红玉奶油·草莓糖",
+    "en": "Alcremie (ruby-cream strawberry-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10203.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-ruby-cream-berry-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 红玉奶油·果实糖",
+    "en": "Alcremie (ruby-cream berry-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10204.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-ruby-cream-love-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 红玉奶油·爱心糖",
+    "en": "Alcremie (ruby-cream love-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10205.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-ruby-cream-star-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 红玉奶油·星星糖",
+    "en": "Alcremie (ruby-cream star-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10206.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-ruby-cream-clover-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 红玉奶油·三叶草糖",
+    "en": "Alcremie (ruby-cream clover-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10207.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-ruby-cream-flower-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 红玉奶油·花朵糖",
+    "en": "Alcremie (ruby-cream flower-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10208.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-ruby-cream-ribbon-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 红玉奶油·缎带糖",
+    "en": "Alcremie (ruby-cream ribbon-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10209.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-matcha-cream-strawberry-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 抹茶奶油·草莓糖",
+    "en": "Alcremie (matcha-cream strawberry-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10210.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-matcha-cream-berry-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 抹茶奶油·果实糖",
+    "en": "Alcremie (matcha-cream berry-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10211.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-matcha-cream-love-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 抹茶奶油·爱心糖",
+    "en": "Alcremie (matcha-cream love-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10212.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-matcha-cream-star-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 抹茶奶油·星星糖",
+    "en": "Alcremie (matcha-cream star-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10213.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-matcha-cream-clover-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 抹茶奶油·三叶草糖",
+    "en": "Alcremie (matcha-cream clover-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10214.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-matcha-cream-flower-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 抹茶奶油·花朵糖",
+    "en": "Alcremie (matcha-cream flower-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10215.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-matcha-cream-ribbon-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 抹茶奶油·缎带糖",
+    "en": "Alcremie (matcha-cream ribbon-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10216.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-mint-cream-strawberry-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 薄荷奶油·草莓糖",
+    "en": "Alcremie (mint-cream strawberry-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10217.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-mint-cream-berry-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 薄荷奶油·果实糖",
+    "en": "Alcremie (mint-cream berry-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10218.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-mint-cream-love-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 薄荷奶油·爱心糖",
+    "en": "Alcremie (mint-cream love-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10219.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-mint-cream-star-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 薄荷奶油·星星糖",
+    "en": "Alcremie (mint-cream star-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10220.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-mint-cream-clover-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 薄荷奶油·三叶草糖",
+    "en": "Alcremie (mint-cream clover-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10221.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-mint-cream-flower-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 薄荷奶油·花朵糖",
+    "en": "Alcremie (mint-cream flower-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10222.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-mint-cream-ribbon-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 薄荷奶油·缎带糖",
+    "en": "Alcremie (mint-cream ribbon-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10223.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-lemon-cream-strawberry-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 柠檬奶油·草莓糖",
+    "en": "Alcremie (lemon-cream strawberry-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10224.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-lemon-cream-berry-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 柠檬奶油·果实糖",
+    "en": "Alcremie (lemon-cream berry-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10225.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-lemon-cream-love-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 柠檬奶油·爱心糖",
+    "en": "Alcremie (lemon-cream love-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10226.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-lemon-cream-star-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 柠檬奶油·星星糖",
+    "en": "Alcremie (lemon-cream star-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10227.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-lemon-cream-clover-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 柠檬奶油·三叶草糖",
+    "en": "Alcremie (lemon-cream clover-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10228.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-lemon-cream-flower-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 柠檬奶油·花朵糖",
+    "en": "Alcremie (lemon-cream flower-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10229.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-lemon-cream-ribbon-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 柠檬奶油·缎带糖",
+    "en": "Alcremie (lemon-cream ribbon-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10230.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-salted-cream-strawberry-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 盐味奶油·草莓糖",
+    "en": "Alcremie (salted-cream strawberry-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10231.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-salted-cream-berry-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 盐味奶油·果实糖",
+    "en": "Alcremie (salted-cream berry-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10232.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-salted-cream-love-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 盐味奶油·爱心糖",
+    "en": "Alcremie (salted-cream love-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10233.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-salted-cream-star-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 盐味奶油·星星糖",
+    "en": "Alcremie (salted-cream star-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10234.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-salted-cream-clover-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 盐味奶油·三叶草糖",
+    "en": "Alcremie (salted-cream clover-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10235.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-salted-cream-flower-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 盐味奶油·花朵糖",
+    "en": "Alcremie (salted-cream flower-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10236.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-salted-cream-ribbon-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 盐味奶油·缎带糖",
+    "en": "Alcremie (salted-cream ribbon-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10237.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-caramel-swirl-strawberry-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 焦糖漩涡·草莓糖",
+    "en": "Alcremie (caramel-swirl strawberry-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10238.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-caramel-swirl-berry-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 焦糖漩涡·果实糖",
+    "en": "Alcremie (caramel-swirl berry-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10239.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-caramel-swirl-love-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 焦糖漩涡·爱心糖",
+    "en": "Alcremie (caramel-swirl love-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10240.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-caramel-swirl-star-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 焦糖漩涡·星星糖",
+    "en": "Alcremie (caramel-swirl star-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10241.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-caramel-swirl-clover-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 焦糖漩涡·三叶草糖",
+    "en": "Alcremie (caramel-swirl clover-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10242.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-caramel-swirl-flower-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 焦糖漩涡·花朵糖",
+    "en": "Alcremie (caramel-swirl flower-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10243.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-caramel-swirl-ribbon-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 焦糖漩涡·缎带糖",
+    "en": "Alcremie (caramel-swirl ribbon-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10244.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-ruby-swirl-strawberry-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 红玉漩涡·草莓糖",
+    "en": "Alcremie (ruby-swirl strawberry-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10245.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-ruby-swirl-berry-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 红玉漩涡·果实糖",
+    "en": "Alcremie (ruby-swirl berry-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10246.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-ruby-swirl-love-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 红玉漩涡·爱心糖",
+    "en": "Alcremie (ruby-swirl love-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10247.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-ruby-swirl-star-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 红玉漩涡·星星糖",
+    "en": "Alcremie (ruby-swirl star-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10248.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-ruby-swirl-clover-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 红玉漩涡·三叶草糖",
+    "en": "Alcremie (ruby-swirl clover-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10249.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-ruby-swirl-flower-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 红玉漩涡·花朵糖",
+    "en": "Alcremie (ruby-swirl flower-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10250.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-ruby-swirl-ribbon-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 红玉漩涡·缎带糖",
+    "en": "Alcremie (ruby-swirl ribbon-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10251.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-rainbow-swirl-strawberry-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 彩虹漩涡·草莓糖",
+    "en": "Alcremie (rainbow-swirl strawberry-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10252.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-rainbow-swirl-berry-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 彩虹漩涡·果实糖",
+    "en": "Alcremie (rainbow-swirl berry-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10253.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-rainbow-swirl-love-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 彩虹漩涡·爱心糖",
+    "en": "Alcremie (rainbow-swirl love-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10254.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-rainbow-swirl-star-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 彩虹漩涡·星星糖",
+    "en": "Alcremie (rainbow-swirl star-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10255.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-rainbow-swirl-clover-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 彩虹漩涡·三叶草糖",
+    "en": "Alcremie (rainbow-swirl clover-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10256.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-rainbow-swirl-flower-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 彩虹漩涡·花朵糖",
+    "en": "Alcremie (rainbow-swirl flower-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10257.png",
+    "section": "form"
+  },
+  {
+    "id": "alcremie-rainbow-swirl-ribbon-sweet",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 彩虹漩涡·缎带糖",
+    "en": "Alcremie (rainbow-swirl ribbon-sweet)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10258.png",
+    "section": "form"
+  },
+  {
+    "id": "venusaur-gmax",
+    "num": "0003",
+    "numInt": 3,
+    "zh": "妙蛙花 超极巨化",
+    "en": "Gigantamax Venusaur",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10195.png",
+    "section": "gmax"
+  },
+  {
+    "id": "charizard-gmax",
+    "num": "0006",
+    "numInt": 6,
+    "zh": "喷火龙 超极巨化",
+    "en": "Gigantamax Charizard",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10196.png",
+    "section": "gmax"
+  },
+  {
+    "id": "blastoise-gmax",
+    "num": "0009",
+    "numInt": 9,
+    "zh": "水箭龟 超极巨化",
+    "en": "Gigantamax Blastoise",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10197.png",
+    "section": "gmax"
+  },
+  {
+    "id": "butterfree-gmax",
+    "num": "0012",
+    "numInt": 12,
+    "zh": "巴大蝶 超极巨化",
+    "en": "Gigantamax Butterfree",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10198.png",
+    "section": "gmax"
+  },
+  {
+    "id": "pikachu-gmax",
+    "num": "0025",
+    "numInt": 25,
+    "zh": "皮卡丘 超极巨化",
+    "en": "Gigantamax Pikachu",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10199.png",
+    "section": "gmax"
+  },
+  {
+    "id": "meowth-gmax",
+    "num": "0052",
+    "numInt": 52,
+    "zh": "喵喵 超极巨化",
+    "en": "Gigantamax Meowth",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10200.png",
+    "section": "gmax"
+  },
+  {
+    "id": "machamp-gmax",
+    "num": "0068",
+    "numInt": 68,
+    "zh": "怪力 超极巨化",
+    "en": "Gigantamax Machamp",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10201.png",
+    "section": "gmax"
+  },
+  {
+    "id": "gengar-gmax",
+    "num": "0094",
+    "numInt": 94,
+    "zh": "耿鬼 超极巨化",
+    "en": "Gigantamax Gengar",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10202.png",
+    "section": "gmax"
+  },
+  {
+    "id": "kingler-gmax",
+    "num": "0099",
+    "numInt": 99,
+    "zh": "巨钳蟹 超极巨化",
+    "en": "Gigantamax Kingler",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10203.png",
+    "section": "gmax"
+  },
+  {
+    "id": "lapras-gmax",
+    "num": "0131",
+    "numInt": 131,
+    "zh": "拉普拉斯 超极巨化",
+    "en": "Gigantamax Lapras",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10204.png",
+    "section": "gmax"
+  },
+  {
+    "id": "eevee-gmax",
+    "num": "0133",
+    "numInt": 133,
+    "zh": "伊布 超极巨化",
+    "en": "Gigantamax Eevee",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10205.png",
+    "section": "gmax"
+  },
+  {
+    "id": "snorlax-gmax",
+    "num": "0143",
+    "numInt": 143,
+    "zh": "卡比兽 超极巨化",
+    "en": "Gigantamax Snorlax",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10206.png",
+    "section": "gmax"
+  },
+  {
+    "id": "garbodor-gmax",
+    "num": "0569",
+    "numInt": 569,
+    "zh": "垃圾堆 超极巨化",
+    "en": "Gigantamax Garbodor",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10207.png",
+    "section": "gmax"
+  },
+  {
+    "id": "melmetal-gmax",
+    "num": "0809",
+    "numInt": 809,
+    "zh": "美录梅塔 超极巨化",
+    "en": "Gigantamax Melmetal",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10208.png",
+    "section": "gmax"
+  },
+  {
+    "id": "corviknight-gmax",
+    "num": "0823",
+    "numInt": 823,
+    "zh": "钢铠鸦 超极巨化",
+    "en": "Gigantamax Corviknight",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10212.png",
+    "section": "gmax"
+  },
+  {
+    "id": "orbeetle-gmax",
+    "num": "0826",
+    "numInt": 826,
+    "zh": "圆滚滚 超极巨化",
+    "en": "Gigantamax Orbeetle",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10213.png",
+    "section": "gmax"
+  },
+  {
+    "id": "drednaw-gmax",
+    "num": "0834",
+    "numInt": 834,
+    "zh": "剪缺缺 超极巨化",
+    "en": "Gigantamax Drednaw",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10214.png",
+    "section": "gmax"
+  },
+  {
+    "id": "coalossal-gmax",
+    "num": "0839",
+    "numInt": 839,
+    "zh": "巨炭山 超极巨化",
+    "en": "Gigantamax Coalossal",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10215.png",
+    "section": "gmax"
+  },
+  {
+    "id": "flapple-gmax",
+    "num": "0841",
+    "numInt": 841,
+    "zh": "啪嚓苹果 超极巨化",
+    "en": "Gigantamax Flapple",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10216.png",
+    "section": "gmax"
+  },
+  {
+    "id": "appletun-gmax",
+    "num": "0842",
+    "numInt": 842,
+    "zh": "甜蜜苹果 超极巨化",
+    "en": "Gigantamax Appletun",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10217.png",
+    "section": "gmax"
+  },
+  {
+    "id": "sandaconda-gmax",
+    "num": "0844",
+    "numInt": 844,
+    "zh": "沙螺蟒 超极巨化",
+    "en": "Gigantamax Sandaconda",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10218.png",
+    "section": "gmax"
+  },
+  {
+    "id": "toxtricity-amped-gmax",
+    "num": "0849",
+    "numInt": 849,
+    "zh": "颤弦蝾螈 超极巨化·强",
+    "en": "Gigantamax Toxtricity (Amped)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10219.png",
+    "section": "gmax"
+  },
+  {
+    "id": "toxtricity-low-key-gmax",
+    "num": "0849",
+    "numInt": 849,
+    "zh": "颤弦蝾螈 超极巨化·弱",
+    "en": "Gigantamax Toxtricity (Low Key)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10228.png",
+    "section": "gmax"
+  },
+  {
+    "id": "centiskorch-gmax",
+    "num": "0851",
+    "numInt": 851,
+    "zh": "蜈蚣王 超极巨化",
+    "en": "Gigantamax Centiskorch",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10220.png",
+    "section": "gmax"
+  },
+  {
+    "id": "hatterene-gmax",
+    "num": "0858",
+    "numInt": 858,
+    "zh": "魔法少女帽 超极巨化",
+    "en": "Gigantamax Hatterene",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10221.png",
+    "section": "gmax"
+  },
+  {
+    "id": "grimmsnarl-gmax",
+    "num": "0861",
+    "numInt": 861,
+    "zh": "长毛巨魔 超极巨化",
+    "en": "Gigantamax Grimmsnarl",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10222.png",
+    "section": "gmax"
+  },
+  {
+    "id": "alcremie-gmax",
+    "num": "0869",
+    "numInt": 869,
+    "zh": "奶油精 超极巨化",
+    "en": "Gigantamax Alcremie",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10223.png",
+    "section": "gmax"
+  },
+  {
+    "id": "copperajah-gmax",
+    "num": "0879",
+    "numInt": 879,
+    "zh": "象牙铜象 超极巨化",
+    "en": "Gigantamax Copperajah",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10224.png",
+    "section": "gmax"
+  },
+  {
+    "id": "duraludon-gmax",
+    "num": "0884",
+    "numInt": 884,
+    "zh": "钢铠龙 超极巨化",
+    "en": "Gigantamax Duraludon",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10225.png",
+    "section": "gmax"
+  },
+  {
+    "id": "urshifu-single-strike-gmax",
+    "num": "0892",
+    "numInt": 892,
+    "zh": "武道熊师 超极巨化·一击",
+    "en": "Gigantamax Urshifu Single Strike",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10226.png",
+    "section": "gmax"
+  },
+  {
+    "id": "urshifu-rapid-strike-gmax",
+    "num": "0892",
+    "numInt": 892,
+    "zh": "武道熊师 超极巨化·连击",
+    "en": "Gigantamax Urshifu Rapid Strike",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10227.png",
+    "section": "gmax"
+  }
+]
